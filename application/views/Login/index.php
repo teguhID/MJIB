@@ -45,7 +45,6 @@
 }
 </style>
 <body>
-<form action="<?php echo site_url('LoginController/Login')?>" method="post">
   <div class="page login-page">
     <div class="container d-flex align-items-center">
       <div class="form-holder has-shadow">
@@ -62,30 +61,30 @@
               </div>
             </div>
           </div>
-
           <!-- Form Panel    -->
           <div class="col-lg-6 bg-white">
             <div class="form d-flex align-items-center">
               <div class="content">
-             
-                  <div class="form-group">
-                    <input id="login-username" type="text" name="username" required
-                      data-msg="Please enter your username" class="input-material" placeholder="Username">
-                    <label for="login-username" class="label-material"></label>
-                  </div>
-                  <div class="form-group">
-                    <input id="login-password" type="password" name="password" required
-                      data-msg="Please enter your password" class="input-material" placeholder="Username">
-                    <label for="login-password" class="label-material"></label><br><br>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                  <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-              </div>
+
+                  <form action="<?=site_url('LoginController/Login')?>" method="POST">
+                    <div class="form-group">
+                      <input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material" placeholder="Username">
+                      <label for="login-username" class="label-material"></label>
+                    </div>
+                    <div class="form-group">
+                      <input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material" placeholder="Username">
+                      <label for="login-password" class="label-material"></label><br><br>
+                      <button type="submit" name="login" class="btn btn-primary">Login</button>
+                    <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+                    </div>
+                  </form>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    </form>
+    
     <div class="copyrights text-center">
       <p>Design by <a href="https://bootstrapious.com/p/admin-template" class="external">FeiAdnan</a>
         <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->

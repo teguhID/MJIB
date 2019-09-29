@@ -2,802 +2,283 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bootstrap Material Admin by Bootstrapious.com</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="robots" content="all,follow">
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>">
-  <!-- Font Awesome CSS-->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css')?>">
-  <!-- Fontastic Custom icon font-->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/fontastic.css')?>">
-  <!-- Google fonts - Poppins -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
-  <!-- theme stylesheet-->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/style.default.css')?>" id="theme-stylesheet">
-  <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/custom.css')?>">
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="<?php echo base_url('assets/img/admin/favicon.ico')?>">
-  <!-- Tweaks for older IEs-->
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - Brand</title>
+    <link rel="stylesheet" href="<?php echo base_url('')?>assets/admin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="<?php echo base_url('')?>assets/admin/fonts/fontawesome-all.min.css">
 </head>
 
-<body>
-
-  <div class="page">
-    <!-- Main Navbar-->
-    <header class="header">
-      <nav class="navbar">
-        <!-- Search Box-->
-        <div class="search-box">
-          <button class="dismiss"><i class="icon-close"></i></button>
-          <form id="searchForm" action="#" role="search">
-            <input type="search" placeholder="What are you looking for..." class="form-control">
-          </form>
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center justify-content-lg-center sidebar-brand m-0" href="#" style="height: 78px;width: 100%;padding-bottom: 0px;"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></a>
+                <hr
+                    class="sidebar-divider my-0">
+                    <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-sitemap"></i><span>Oraganisasi</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-microphone"></i><span>Tausiah</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-list-alt"></i><span>Jadwal</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-mobile"></i><span>Media</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-calendar-day"></i><span>Event</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html"><i class="fas fa-camera"></i><span>Dokumentasi</span></a></li>
+                    </ul>
+                    <div class="text-center d-none d-md-inline"></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                            <li class="nav-item dropdown no-arrow" role="presentation">
+                                <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                                    <div
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <a
+                                            class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" role="presentation" href="<?=site_url('LoginController/Logout')?>"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
+                    </li>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                    <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="card shadow border-left-primary py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>Earnings (monthly)</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span>$40,000</span></div>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="card shadow border-left-success py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>Earnings (annual)</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span>$215,000</span></div>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="card shadow border-left-info py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span>Tasks</span></div>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>50%</span></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="card shadow border-left-warning py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <div class="text-uppercase text-warning font-weight-bold text-xs mb-1"><span>Pending Requests</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span>18</span></div>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="card shadow mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6 class="text-primary font-weight-bold m-0">Earnings Overview</h6>
+                                <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                        role="menu">
+                                        <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-4">
+                        <div class="card shadow mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6 class="text-primary font-weight-bold m-0">Revenue Sources</h6>
+                                <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                        role="menu">
+                                        <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                                <div
+                                    class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Direct</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Social</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Refferal</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="text-primary font-weight-bold m-0">Projects</h6>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="small font-weight-bold">Server migration<span class="float-right">20%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="sr-only">20%</span></div>
+                            </div>
+                            <h4 class="small font-weight-bold">Sales tracking<span class="float-right">40%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
+                            </div>
+                            <h4 class="small font-weight-bold">Customer Database<span class="float-right">60%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
+                            </div>
+                            <h4 class="small font-weight-bold">Payout Details<span class="float-right">80%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                            </div>
+                            <h4 class="small font-weight-bold">Account setup<span class="float-right">Complete!</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="text-primary font-weight-bold m-0">Todo List</h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">10:30 AM</span></div>
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-1"><label class="custom-control-label" for="formCheck-1"></label></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">11:30 AM</span></div>
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-2"><label class="custom-control-label" for="formCheck-2"></label></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">12:30 AM</span></div>
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-3"><label class="custom-control-label" for="formCheck-3"></label></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-primary shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Primary</p>
+                                    <p class="text-white-50 small m-0">#4e73df</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-success shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Success</p>
+                                    <p class="text-white-50 small m-0">#1cc88a</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-info shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Info</p>
+                                    <p class="text-white-50 small m-0">#36b9cc</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-warning shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Warning</p>
+                                    <p class="text-white-50 small m-0">#f6c23e</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-danger shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Danger</p>
+                                    <p class="text-white-50 small m-0">#e74a3b</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card text-white bg-secondary shadow">
+                                <div class="card-body">
+                                    <p class="m-0">Secondary</p>
+                                    <p class="text-white-50 small m-0">#858796</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container-fluid">
-          <div class="navbar-holder d-flex align-items-center justify-content-between">
-            <!-- Navbar Header-->
-            <div class="navbar-header">
-              <!-- Navbar Brand --><a href="index.html" class="navbar-brand d-none d-sm-inline-block">
-                <div class="brand-text d-none d-lg-inline-block"><span>Bootstrap </span><strong>Dashboard</strong></div>
-                <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>BD</strong></div>
-              </a>
-              <!-- Toggle Button--><a id="toggle-btn" href="#"
-                class="menu-btn active"><span></span><span></span><span></span></a>
-            </div>
-            <!-- Navbar Menu -->
-            <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-              <!-- Search-->
-              <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a>
-              </li>
-              <!-- Notifications-->
-              <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i
-                    class="fa fa-bell-o"></i><span class="badge bg-red badge-corner">12</span></a>
-                <ul aria-labelledby="notifications" class="dropdown-menu">
-                  <li><a rel="nofollow" href="#" class="dropdown-item">
-                      <div class="notification">
-                        <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages
-                        </div>
-                        <div class="notification-time"><small>4 minutes ago</small></div>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item">
-                      <div class="notification">
-                        <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers
-                        </div>
-                        <div class="notification-time"><small>4 minutes ago</small></div>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item">
-                      <div class="notification">
-                        <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
-                        <div class="notification-time"><small>4 minutes ago</small></div>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item">
-                      <div class="notification">
-                        <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers
-                        </div>
-                        <div class="notification-time"><small>10 minutes ago</small></div>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all
-                        notifications </strong></a></li>
-                </ul>
-              </li>
-              <!-- Messages                        -->
-              <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i
-                    class="fa fa-envelope-o"></i><span class="badge bg-orange badge-corner">10</span></a>
-                <ul aria-labelledby="notifications" class="dropdown-menu">
-                  <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                      <div class="msg-profile"> <img src="<?php echo base_url('assets/img/admin/img/')?>avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
-                      </div>
-                      <div class="msg-body">
-                        <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                      <div class="msg-profile"> <img src="<?php echo base_url('assets/img/admin/img/')?>avatar-2.jpg" alt="..." class="img-fluid rounded-circle">
-                      </div>
-                      <div class="msg-body">
-                        <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                      <div class="msg-profile"> <img src="<?php echo base_url('assets/img/admin/img/')?>avatar-3.jpg" alt="..." class="img-fluid rounded-circle">
-                      </div>
-                      <div class="msg-body">
-                        <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
-                      </div>
-                    </a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>Read all
-                        messages </strong></a></li>
-                </ul>
-              </li>
-              <!-- Languages dropdown    -->
-              <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                  class="nav-link language dropdown-toggle"><img src="img/flags/16/GB.png" alt="English"><span
-                    class="d-none d-sm-inline-block">English</span></a>
-                <ul aria-labelledby="languages" class="dropdown-menu">
-                  <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English"
-                        class="mr-2">German</a></li>
-                  <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English"
-                        class="mr-2">French </a></li>
-                </ul>
-              </li>
-              <!-- Logout    -->
-              <li class="nav-item"> <a href="../logout.php">
-                <span class="d-none d-sm-inline">Logout</span> <i class="fa fa-sign-out"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="page-content d-flex align-items-stretch">
-      <!-- Side Navbar -->
-      <nav class="side-navbar">
-        <!-- Sidebar Header-->
-        <div class="sidebar-header d-flex align-items-center">
-          <div class="avatar"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
-          <div class="title">
-            <h1 class="h4">Mark Stephen</h1>
-            <p>Web Designer</p>
-          </div>
-        </div>
-        <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
-        <ul class="list-unstyled">
-          <li class="active"><a href="admin.php"> <i class="icon-home"></i>Home </a></li>
-          <li><a href="tables.php"> <i class="icon-grid"></i>Tables </a></li>
-          <li><a href="charts.php"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-          <li><a href="forms.php"> <i class="icon-padnote"></i>Forms </a></li>
-          <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i
-                class="icon-interface-windows"></i>Example dropdown </a>
-            <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="#">Page</a></li>
-              <li><a href="#">Page</a></li>
-              <li><a href="#">Page</a></li>
-            </ul>
-          </li>
-          <li><a href="#"> <i class="icon-interface-windows"></i>Login page </a></li>
-        </ul><span class="heading">Extras</span>
-        <ul class="list-unstyled">
-          <li> <a href="#"> <i class="icon-flask"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-screen"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-mail"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-picture"></i>Demo </a></li>
-        </ul>
-      </nav>
-      <div class="content-inner">
-        <!-- Page Header-->
-        <header class="page-header">
-          <div class="container-fluid">
-            <h2 class="no-margin-bottom">Dashboard</h2>
-          </div>
-        </header>
-        <!-- Dashboard Counts Section-->
-        <section class="dashboard-counts no-padding-bottom">
-          <div class="container-fluid">
-            <div class="row bg-white has-shadow">
-              <!-- Item -->
-              <div class="col-xl-3 col-sm-6">
-                <div class="item d-flex align-items-center">
-                  <div class="icon bg-violet"><i class="icon-user"></i></div>
-                  <div class="title"><span>New<br>Clients</span>
-                    <div class="progress">
-                      <div role="progressbar" style="width: 25%; height: 4px;" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-violet"></div>
-                    </div>
-                  </div>
-                  <div class="number"><strong>25</strong></div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="col-xl-3 col-sm-6">
-                <div class="item d-flex align-items-center">
-                  <div class="icon bg-red"><i class="icon-padnote"></i></div>
-                  <div class="title"><span>Work<br>Orders</span>
-                    <div class="progress">
-                      <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-red"></div>
-                    </div>
-                  </div>
-                  <div class="number"><strong>70</strong></div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="col-xl-3 col-sm-6">
-                <div class="item d-flex align-items-center">
-                  <div class="icon bg-green"><i class="icon-bill"></i></div>
-                  <div class="title"><span>New<br>Invoices</span>
-                    <div class="progress">
-                      <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-green"></div>
-                    </div>
-                  </div>
-                  <div class="number"><strong>40</strong></div>
-                </div>
-              </div>
-              <!-- Item -->
-              <div class="col-xl-3 col-sm-6">
-                <div class="item d-flex align-items-center">
-                  <div class="icon bg-orange"><i class="icon-check"></i></div>
-                  <div class="title"><span>Open<br>Cases</span>
-                    <div class="progress">
-                      <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-orange"></div>
-                    </div>
-                  </div>
-                  <div class="number"><strong>50</strong></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Dashboard Header Section    -->
-        <section class="dashboard-header">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Statistics -->
-              <div class="statistics col-lg-3 col-12">
-                <div class="statistic d-flex align-items-center bg-white has-shadow">
-                  <div class="icon bg-red"><i class="fa fa-tasks"></i></div>
-                  <div class="text"><strong>234</strong><br><small>Applications</small></div>
-                </div>
-                <div class="statistic d-flex align-items-center bg-white has-shadow">
-                  <div class="icon bg-green"><i class="fa fa-calendar-o"></i></div>
-                  <div class="text"><strong>152</strong><br><small>Interviews</small></div>
-                </div>
-                <div class="statistic d-flex align-items-center bg-white has-shadow">
-                  <div class="icon bg-orange"><i class="fa fa-paper-plane-o"></i></div>
-                  <div class="text"><strong>147</strong><br><small>Forwards</small></div>
-                </div>
-              </div>
-              <!-- Line Chart            -->
-              <div class="chart col-lg-6 col-12">
-                <div class="line-chart bg-white d-flex align-items-center justify-content-center has-shadow">
-                  <canvas id="lineCahrt"></canvas>
-                </div>
-              </div>
-              <div class="chart col-lg-3 col-12">
-                <!-- Bar Chart   -->
-                <div class="bar-chart has-shadow bg-white">
-                  <div class="title"><strong class="text-violet">95%</strong><br><small>Current Server Uptime</small>
-                  </div>
-                  <canvas id="barChartHome"></canvas>
-                </div>
-                <!-- Numbers-->
-                <div class="statistic d-flex align-items-center bg-white has-shadow">
-                  <div class="icon bg-green"><i class="fa fa-line-chart"></i></div>
-                  <div class="text"><strong>99.9%</strong><br><small>Success Rate</small></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Projects Section-->
-        <section class="projects no-padding-top">
-          <div class="container-fluid">
-            <!-- Project-->
-            <div class="project">
-              <div class="row bg-white has-shadow">
-                <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
-                  <div class="project-title d-flex align-items-center">
-                    <div class="image has-shadow"><img src="<?php echo base_url('assets/img/admin/img/')?>project-1.jpg" alt="..." class="img-fluid"></div>
-                    <div class="text">
-                      <h3 class="h4">Project Title</h3><small>Lorem Ipsum Dolor</small>
-                    </div>
-                  </div>
-                  <div class="project-date"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
-                </div>
-                <div class="right-col col-lg-6 d-flex align-items-center">
-                  <div class="time"><i class="fa fa-clock-o"></i>12:00 PM </div>
-                  <div class="comments"><i class="fa fa-comment-o"></i>20</div>
-                  <div class="project-progress">
-                    <div class="progress">
-                      <div role="progressbar" style="width: 45%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-red"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project-->
-            <div class="project">
-              <div class="row bg-white has-shadow">
-                <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
-                  <div class="project-title d-flex align-items-center">
-                    <div class="image has-shadow"><img src="<?php echo base_url('assets/img/admin/img/')?>project-2.jpg" alt="..." class="img-fluid"></div>
-                    <div class="text">
-                      <h3 class="h4">Project Title</h3><small>Lorem Ipsum Dolor</small>
-                    </div>
-                  </div>
-                  <div class="project-date"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
-                </div>
-                <div class="right-col col-lg-6 d-flex align-items-center">
-                  <div class="time"><i class="fa fa-clock-o"></i>12:00 PM </div>
-                  <div class="comments"><i class="fa fa-comment-o"></i>20</div>
-                  <div class="project-progress">
-                    <div class="progress">
-                      <div role="progressbar" style="width: 60%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-green"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project-->
-            <div class="project">
-              <div class="row bg-white has-shadow">
-                <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
-                  <div class="project-title d-flex align-items-center">
-                    <div class="image has-shadow"><img src="<?php echo base_url('assets/img/admin/img/')?>project-3.jpg" alt="..." class="img-fluid"></div>
-                    <div class="text">
-                      <h3 class="h4">Project Title</h3><small>Lorem Ipsum Dolor</small>
-                    </div>
-                  </div>
-                  <div class="project-date"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
-                </div>
-                <div class="right-col col-lg-6 d-flex align-items-center">
-                  <div class="time"><i class="fa fa-clock-o"></i>12:00 PM </div>
-                  <div class="comments"><i class="fa fa-comment-o"></i>20</div>
-                  <div class="project-progress">
-                    <div class="progress">
-                      <div role="progressbar" style="width: 50%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-violet"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project-->
-            <div class="project">
-              <div class="row bg-white has-shadow">
-                <div class="left-col col-lg-6 d-flex align-items-center justify-content-between">
-                  <div class="project-title d-flex align-items-center">
-                    <div class="image has-shadow"><img src="<?php echo base_url('assets/img/admin/img/')?>project-4.jpg" alt="..." class="img-fluid"></div>
-                    <div class="text">
-                      <h3 class="h4">Project Title</h3><small>Lorem Ipsum Dolor</small>
-                    </div>
-                  </div>
-                  <div class="project-date"><span class="hidden-sm-down">Today at 4:24 AM</span></div>
-                </div>
-                <div class="right-col col-lg-6 d-flex align-items-center">
-                  <div class="time"><i class="fa fa-clock-o"></i>12:00 PM </div>
-                  <div class="comments"><i class="fa fa-comment-o"></i>20</div>
-                  <div class="project-progress">
-                    <div class="progress">
-                      <div role="progressbar" style="width: 50%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100" class="progress-bar bg-orange"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Client Section-->
-        <section class="client no-padding-top">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Work Amount  -->
-              <div class="col-lg-4">
-                <div class="work-amount card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard1" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard1" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Work Hours</h3><small>Lorem ipsum dolor sit amet.</small>
-                    <div class="chart text-center">
-                      <div class="text"><strong>90</strong><br><span>Hours</span></div>
-                      <canvas id="pieChart"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Client Profile -->
-              <div class="col-lg-4">
-                <div class="client card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-body text-center">
-                    <div class="client-avatar"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-2.jpg" alt="..." class="img-fluid rounded-circle">
-                      <div class="status bg-green"></div>
-                    </div>
-                    <div class="client-title">
-                      <h3>Jason Doe</h3><span>Web Developer</span><a href="#">Follow</a>
-                    </div>
-                    <div class="client-info">
-                      <div class="row">
-                        <div class="col-4"><strong>20</strong><br><small>Photos</small></div>
-                        <div class="col-4"><strong>54</strong><br><small>Videos</small></div>
-                        <div class="col-4"><strong>235</strong><br><small>Tasks</small></div>
-                      </div>
-                    </div>
-                    <div class="client-social d-flex justify-content-between"><a href="#" target="_blank"><i
-                          class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a
-                        href="#" target="_blank"><i class="fa fa-google-plus"></i></a><a href="#" target="_blank"><i
-                          class="fa fa-instagram"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Total Overdue             -->
-              <div class="col-lg-4">
-                <div class="overdue card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard3" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard3" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h3>Total Overdue</h3><small>Lorem ipsum dolor sit amet.</small>
-                    <div class="number text-center">$20,000</div>
-                    <div class="chart">
-                      <canvas id="lineChart1"> </canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Feeds Section-->
-        <section class="feeds no-padding-top">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Trending Articles-->
-              <div class="col-lg-6">
-                <div class="articles card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-header d-flex align-items-center">
-                    <h2 class="h3">Trending Articles </h2>
-                    <div class="badge badge-rounded bg-green">4 New </div>
-                  </div>
-                  <div class="card-body no-padding">
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                      <div class="text"><a href="#">
-                          <h3 class="h5">Lorem Ipsum Dolor</h3>
-                        </a><small>Posted on 5th June 2017 by Aria Smith. </small></div>
-                    </div>
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                      <div class="text"><a href="#">
-                          <h3 class="h5">Lorem Ipsum Dolor</h3>
-                        </a><small>Posted on 5th June 2017 by Frank Williams. </small></div>
-                    </div>
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                      <div class="text"><a href="#">
-                          <h3 class="h5">Lorem Ipsum Dolor</h3>
-                        </a><small>Posted on 5th June 2017 by Ashley Wood. </small></div>
-                    </div>
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-4.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                      <div class="text"><a href="#">
-                          <h3 class="h5">Lorem Ipsum Dolor</h3>
-                        </a><small>Posted on 5th June 2017 by Jason Doe. </small></div>
-                    </div>
-                    <div class="item d-flex align-items-center">
-                      <div class="image"><img src="<?php echo base_url('assets/img/admin/img/')?>avatar-5.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                      <div class="text"><a href="#">
-                          <h3 class="h5">Lorem Ipsum Dolor</h3>
-                        </a><small>Posted on 5th June 2017 by Sam Martinez. </small></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Check List -->
-              <div class="col-lg-6">
-                <div class="checklist card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-header d-flex align-items-center">
-                    <h2 class="h3">To Do List </h2>
-                  </div>
-                  <div class="card-body no-padding">
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-1" name="input-1" class="checkbox-template">
-                      <label for="input-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-2" name="input-2" class="checkbox-template">
-                      <label for="input-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-3" name="input-3" class="checkbox-template">
-                      <label for="input-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-4" name="input-4" class="checkbox-template">
-                      <label for="input-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-5" name="input-5" class="checkbox-template">
-                      <label for="input-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                    <div class="item d-flex">
-                      <input type="checkbox" id="input-6" name="input-6" class="checkbox-template">
-                      <label for="input-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Updates Section                                                -->
-        <section class="updates no-padding-top">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Recent Updates-->
-              <div class="col-lg-4">
-                <div class="recent-updates card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard6" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard6" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-header">
-                    <h3 class="h4">Recent Updates</h3>
-                  </div>
-                  <div class="card-body no-padding">
-                    <!-- Item-->
-                    <div class="item d-flex justify-content-between">
-                      <div class="info d-flex">
-                        <div class="icon"><i class="icon-rss-feed"></i></div>
-                        <div class="title">
-                          <h5>Lorem ipsum dolor sit amet.</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
-                        </div>
-                      </div>
-                      <div class="date text-right"><strong>24</strong><span>May</span></div>
-                    </div>
-                    <!-- Item-->
-                    <div class="item d-flex justify-content-between">
-                      <div class="info d-flex">
-                        <div class="icon"><i class="icon-rss-feed"></i></div>
-                        <div class="title">
-                          <h5>Lorem ipsum dolor sit amet.</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
-                        </div>
-                      </div>
-                      <div class="date text-right"><strong>24</strong><span>May</span></div>
-                    </div>
-                    <!-- Item        -->
-                    <div class="item d-flex justify-content-between">
-                      <div class="info d-flex">
-                        <div class="icon"><i class="icon-rss-feed"></i></div>
-                        <div class="title">
-                          <h5>Lorem ipsum dolor sit amet.</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
-                        </div>
-                      </div>
-                      <div class="date text-right"><strong>24</strong><span>May</span></div>
-                    </div>
-                    <!-- Item-->
-                    <div class="item d-flex justify-content-between">
-                      <div class="info d-flex">
-                        <div class="icon"><i class="icon-rss-feed"></i></div>
-                        <div class="title">
-                          <h5>Lorem ipsum dolor sit amet.</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
-                        </div>
-                      </div>
-                      <div class="date text-right"><strong>24</strong><span>May</span></div>
-                    </div>
-                    <!-- Item-->
-                    <div class="item d-flex justify-content-between">
-                      <div class="info d-flex">
-                        <div class="icon"><i class="icon-rss-feed"></i></div>
-                        <div class="title">
-                          <h5>Lorem ipsum dolor sit amet.</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed.</p>
-                        </div>
-                      </div>
-                      <div class="date text-right"><strong>24</strong><span>May</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Daily Feeds -->
-              <div class="col-lg-4">
-                <div class="daily-feeds card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard7" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard7" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-header">
-                    <h3 class="h4">Daily Feeds</h3>
-                  </div>
-                  <div class="card-body no-padding">
-                    <!-- Item-->
-                    <div class="item">
-                      <div class="feed d-flex justify-content-between">
-                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img
-                              src="<?php echo base_url('assets/img/admin/img/')?>avatar-5.jpg" alt="person" class="img-fluid rounded-circle"></a>
-                          <div class="content">
-                            <h5>Aria Smith</h5><span>Posted a new blog </span>
-                            <div class="full-date"><small>Today 5:60 pm - 12.06.2014</small></div>
-                          </div>
-                        </div>
-                        <div class="date text-right"><small>5min ago</small></div>
-                      </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="item">
-                      <div class="feed d-flex justify-content-between">
-                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img
-                              src="<?php echo base_url('assets/img/admin/img/')?>avatar-2.jpg" alt="person" class="img-fluid rounded-circle"></a>
-                          <div class="content">
-                            <h5>Frank Williams</h5><span>Posted a new blog </span>
-                            <div class="full-date"><small>Today 5:60 pm - 12.06.2014</small></div>
-                            <div class="CTAs"><a href="#" class="btn btn-xs btn-secondary"><i class="fa fa-thumbs-up">
-                                </i>Like</a><a href="#" class="btn btn-xs btn-secondary"><i class="fa fa-heart">
-                                </i>Love </a></div>
-                          </div>
-                        </div>
-                        <div class="date text-right"><small>5min ago</small></div>
-                      </div>
-                    </div>
-                    <!-- Item-->
-                    <div class="item clearfix">
-                      <div class="feed d-flex justify-content-between">
-                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img
-                              src="<?php echo base_url('assets/img/admin/img/')?>avatar-3.jpg" alt="person" class="img-fluid rounded-circle"></a>
-                          <div class="content">
-                            <h5>Ashley Wood</h5><span>Posted a new blog </span>
-                            <div class="full-date"><small>Today 5:60 pm - 12.06.2014</small></div>
-                          </div>
-                        </div>
-                        <div class="date text-right"><small>5min ago</small></div>
-                      </div>
-                      <div class="quote has-shadow"> <small>Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                          1500s. Over the years.</small></div>
-                      <div class="CTAs pull-right"><a href="#" class="btn btn-xs btn-secondary"><i
-                            class="fa fa-thumbs-up"> </i>Like</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Recent Activities -->
-              <div class="col-lg-4">
-                <div class="recent-activities card">
-                  <div class="card-close">
-                    <div class="dropdown">
-                      <button type="button" id="closeCard8" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                      <div aria-labelledby="closeCard8" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#"
-                          class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#"
-                          class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                    </div>
-                  </div>
-                  <div class="card-header">
-                    <h3 class="h4">Recent Activities</h3>
-                  </div>
-                  <div class="card-body no-padding">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-4 date-holder text-right">
-                          <div class="icon"><i class="icon-clock"></i></div>
-                          <div class="date"> <span>6:00 am</span><br><span class="text-info">6 hours ago</span></div>
-                        </div>
-                        <div class="col-8 content">
-                          <h5>Meeting</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-4 date-holder text-right">
-                          <div class="icon"><i class="icon-clock"></i></div>
-                          <div class="date"> <span>6:00 am</span><br><span class="text-info">6 hours ago</span></div>
-                        </div>
-                        <div class="col-8 content">
-                          <h5>Meeting</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-4 date-holder text-right">
-                          <div class="icon"><i class="icon-clock"></i></div>
-                          <div class="date"> <span>6:00 am</span><br><span class="text-info">6 hours ago</span></div>
-                        </div>
-                        <div class="col-8 content">
-                          <h5>Meeting</h5>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Page Footer-->
-        <footer class="main-footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6">
-                <p>Your company &copy; 2017-2019</p>
-              </div>
-              <div class="col-sm-6 text-right">
-                <p>Design by <a href="https://bootstrapious.com/p/admin-template" class="external">Bootstrapious</a></p>
-                <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
     </div>
-  </div>
-  <!-- JavaScript files-->
-  <script src="<?php echo base_url('assets/js/jquery.min.js')?>"></script>
-  <script src="<?php echo base_url('assets/js/popper.min.js')?>"> </script>
-  <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
-  <script src="<?php echo base_url('assets/js/jquery.cookie.js')?>"> </script>
-  <script src="<?php echo base_url('assets/js/jquery.validate.min.js')?>"></script>
-  <!-- Main File-->
-  <script src="<?php echo base_url('assets/js/front.js')?>"></script>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright © Brand 2019</span></div>
+        </div>
+    </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="<?php echo base_url('')?>assets/admin/js/jquery.min.js"></script>
+    <script src="<?php echo base_url('')?>assets/admin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('')?>assets/admin/js/chart.min.js"></script>
+    <script src="<?php echo base_url('')?>assets/admin/js/bs-charts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="<?php echo base_url('')?>assets/admin/js/theme.js"></script>
 </body>
 
 </html>
