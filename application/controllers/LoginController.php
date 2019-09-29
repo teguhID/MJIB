@@ -8,7 +8,6 @@ class LoginController extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('LoginModel');
-		
 	}
 	
 
