@@ -8,6 +8,7 @@ class LoginController extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('LoginModel');
+		$this->load->library('session');
 	}
 	
 
@@ -23,7 +24,7 @@ class LoginController extends CI_Controller {
 			$password = $this->input->post('password');
 			$query = $this->LoginModel->Login($username, $password);
 			if ($query->num_rows() > 0) {
-				$this->load->view('Admin/index');
+				redirect('Admin/index');
 			} else {
 				echo "<script>alert('Username dan Password tidak cocok');</script>";
 				$this->load->view('Login/index');
