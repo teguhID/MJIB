@@ -1,17 +1,39 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
-Edit Biografi Pimpinan MJIB <br><br>
 <?php foreach ($biografiPimpinanMJIB as $data): ?>
-<form action="<?php echo site_url('Admin/UpdateBiografiPimpinanMJIB/' . $data['id']);?>" method="post">
-
-image : <input type="text" name="image" value="<?php echo $data['image'];?>"> <br>
-biografi : <input type="text" name="biografi" value="<?php echo $data['biografi'];?>"> <br>
-judul : <input type="text" name="judul" value="<?php echo $data['judul'];?>"> <br>
-username : <input type="text" name="username" value="<?php echo $data['username'];?>"> <br>
-updated_at : <input type="text" name="updated_at" value="<?php echo $data['updated_at'];?>"> <br><br>
-
-<button type="submit">Edit</button>
-
+<form action="<?php echo site_url('Admin/UpdateBiografiPimpinanMJIB/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
+<?php if ($data['image'] == '') {?>
+        <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
+    <?php } else {?>
+        <img src="<?php echo base_url('assets/admin/img/biografi/' . $data['image'])?>" width="630" height="350"><br>
+    <?php } ?>  
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Image</label>
+    <div class="col-sm-8">
+      <input type="file" name="image" class="form-control">
+      <input type="text" name="imageVal" hidden value="<?php echo $data['image'];?>">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Penulis</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" name="username" value="<?php echo $data['username'];?>">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Judul</label>
+    <div class="col-sm-8">
+      <input type="text" name="judul" class="form-control" value="<?php echo $data['judul'];?>">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Konten</label>
+    <div class="col-sm-8">
+        <textarea class="form-control" id="mytextarea" name="biografi" rows="4"><?php echo $data['biografi'];?></textarea>
+    </div>
+  </div>
+  <input type="text" name="updated_at" value=<?php echo date("Y-m-d");?> hidden>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <?php endforeach; ?>
 

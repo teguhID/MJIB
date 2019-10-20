@@ -11,19 +11,21 @@
 
   <title>SB Admin - Dashboard</title>
 
-  <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url('assets/admin/')?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-  <!-- Page level plugin CSS-->
-  <link href="<?php echo base_url('assets/admin/')?>vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
-  <link href="<?php echo base_url('assets/admin/')?>css/sb-admin.css" rel="stylesheet">
+  <!-- PULGIN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="<?php echo base_url('assets/admin/')?>vendor/jquery/jquery.min.js"></script>
+  <link href="<?php echo base_url('assets/admin/')?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/admin/')?>css/sb-admin.min.css" rel="stylesheet">
+  <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+  <script>
+  tinymce.init({
+    selector: '#mytextarea'
+  });
+  </script>
 
 </head>
 
 <body id="page-top">
-
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="<?php echo base_url('assets/admin/')?>#">
@@ -37,39 +39,12 @@
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-bell fa-fw"></i>
-          <span class="badge badge-danger">9+</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Action</a>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-envelope fa-fw"></i>
-          <span class="badge badge-danger">7</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Action</a>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Something else here</a>
-        </div>
-      </li>
       <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-user-circle fa-fw"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Settings</a>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#">Activity Log</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('assets/admin/')?>#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
         </div>
       </li>
     </ul>
@@ -81,7 +56,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url('assets/admin/')?>index.html">
+        <a class="nav-link" href="<?php echo site_url('')?>/Admin/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>

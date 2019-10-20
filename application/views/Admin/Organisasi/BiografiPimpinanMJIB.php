@@ -1,15 +1,26 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
-Biografi Pimpinan MJIB <br><br>
 <?php foreach ($biografiPimpinanMJIB as $data): ?>
-<?php 
- echo 'gambar : ' . $data['image'] . '<br>';
- echo 'biografi : ' . $data['biografi'] . '<br>';
- echo 'judul : ' . $data['judul'] . '<br>';
- echo 'username : ' . $data['username'] . '<br>';
- echo 'updated_at : ' . $data['updated_at'] . '<br>' . '<br>';
-?>
-<a href="<?php echo site_url('Admin/EditBiografiPimpinanMJIB/' . $data['id'])?>">Edit</a>
+<div class="row justify-content-center" style="margin-bottom:20px">
+        <div class="card col-10">
+        <?php if ($data['image'] == '') {?>
+            <div class="row justify-content-center">
+                <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
+            </div>
+        <?php } else {?>
+                <div class="row justify-content-center">                     
+                <img src="<?php echo base_url('assets/admin/img/biografi/' . $data['image'])?>" width="630" height="350"><br>
+            </div>
+        <?php } ?>
+            <div class="card-body">
+                <h3 class="card-title"><?php echo $data['judul'];?></h3>
+                <p class="card-text"><small class="text-muted">Penulis : <?php echo $data['username'];?></small></p>
+                <p class="card-text"><?php echo $data['biografi'];?></p>
+                <p class="card-text"><small class="text-muted">Update : <?php echo $data['updated_at'];?></small></p>
+            </div>
+            <a class="btn btn-outline-primary" href="<?php echo site_url('Admin/EditBiografiPimpinanMJIB/' . $data['id'])?>" style="margin:20px">Edit</a>
+        </div>
+    </div>
 <?php endforeach; ?>
 
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
