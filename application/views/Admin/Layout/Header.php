@@ -79,7 +79,7 @@
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BidayatulHidayah" style="font-size: 14px;">Bidayatul Hidayah</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/IhyaUlumuddin" style="font-size: 14px;">Ihya Ulumuddin</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/KitabRiyadushSholihin" style="font-size: 14px;">Kitab Riyadush Sholihin</a>
+            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/RiyadushSholihin" style="font-size: 14px;">Kitab Riyadush Sholihin</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/NashoihDiniyah" style="font-size: 14px;">Nashoih Diniyah</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahHadistJibril" style="font-size: 14px;">Syarah Hadist Jibril</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahRatibAlHaddad" style="font-size: 14px;">Syarah Ratib Al Haddad</a>

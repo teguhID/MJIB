@@ -20,7 +20,7 @@
                     <td width="20%" class="text-center">
                         <a href="<?php echo site_url('Admin/BidayatulHidayahHalamanEditData/' . $data['id'])?>" class="btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
                         <a href="<?php echo '/#'?>" class="btn-sm btn-secondary"><i class="fa fa-globe"></i></a>
-                        <a href="<?php echo site_url('Admin/BidayatulHidayahHapus/' . $data['id'])?>" class="btn-sm btn-danger" onclick="return confirm('Yakin Igin di Hapus ?')"><i class="fas fa-trash"></i></a>
+                        <a href="<?php echo site_url('Admin/BidayatulHidayahHapus/' . $data['id'] . '/' . $data['image'])?>" class="btn-sm btn-danger" onclick="return confirm('Yakin Igin di Hapus ?')"><i class="fas fa-trash"></i></a>
                     </td>
                 </tr>
             <?php }; ?>

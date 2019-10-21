@@ -40,34 +40,28 @@ class AdminModel extends CI_Model {
     // =================================>>>>== ORGANISASI ==<<<<================================== //
 
     // =================================>>>>== TAUSIAH ==<<<<================================== //
-    public function BidayatulHidayahList()
+    public function ListTausiah($tabel)
     {
-        return $this->db->get('bidayatul_hidayah');
+        return $this->db->get($tabel);
     }
-    public function BidayatulHidayahCreate($data)
+    public function CreateTausiah($data, $tabel)
     {
-        return $this->db->insert('bidayatul_hidayah', $data);
+        return $this->db->insert($tabel, $data);
     }
-    public function BidayatulHidayahDetail($id)
+    public function DetailTausiah($id, $tabel)
     {
         $this->db->where('id', $id);
-        return $this->db->get('bidayatul_hidayah');
+        return $this->db->get($tabel);
     }
-    public function BidayatulHidayahUpdate($id, $data)
+    public function UpdateTausiah($id, $data, $tabel)
     {
         $this->db->where('id', $id);
-        return $this->db->update('bidayatul_hidayah', $data);
+        return $this->db->update($tabel, $data);
     }
-    public function BidayatulHidayahDelete($id)
+    public function DeleteTausiah($id, $tabel)
     {
         $this->db->where('id', $id);
-        return $this->db->delete('bidayatul_hidayah');
-    }
-
-
-    public function IhyaUlumuddinList()
-    {
-        return $this->db->get('bidayatul_hidayah');
+        return $this->db->delete($tabel);
     }
     // =================================>>>>== TAUSIAH ==<<<<================================== //
 
