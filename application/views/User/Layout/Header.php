@@ -21,6 +21,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	<!-- Bootstrap Core CSS -->
 	<link href="<?php echo base_url('assets/user/')?>css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="<?php echo base_url('assets/user/')?>css/style.css" rel='stylesheet' type='text/css' />
+	<link href="<?php echo base_url('assets/user/')?>css/style.event.css" rel='stylesheet' type='text/css' />
 	<!-- pop up box -->
 	<link href="<?php echo base_url('assets/user/')?>css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome icons -->
@@ -66,7 +67,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav text-center  ml-lg-auto">
 						<li class="nav-item active  mr-3">
-							<a class="nav-link" href="index.html">Home
+							<a class="nav-link" href="<?php echo site_url('')?>/User">Home
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
@@ -87,7 +88,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<a class="nav-link" href="<?php echo site_url('')?>/User/Jadwal">Jadwal</a>
 						</li>
 						<li class="nav-item mr-3">
-							<a class="nav-link" href="contact.html">Media</a>
+							<a class="nav-link" href="<?php echo site_url('')?>/User/Media">Media</a>
 						</li>
 						<li class="nav-item mr-3">
 							<a class="nav-link" href="<?php echo site_url('')?>/User/Event">Event</a>

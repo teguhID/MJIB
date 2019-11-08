@@ -23,6 +23,10 @@ class User extends CI_Controller {
 	{
 		$this->load->view('User/event');
 	}
+	public function Media()
+	{
+		$this->load->view('User/contact');
+	}
 	public function Login()
 	{
 		$this->load->view('User/login');
