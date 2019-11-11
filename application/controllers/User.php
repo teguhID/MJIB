@@ -25,10 +25,22 @@ class User extends CI_Controller {
 	}
 	public function Media()
 	{
-		$this->load->view('User/contact');
+		$this->load->view('User/Media');
 	}
 	public function Login()
 	{
 		$this->load->view('User/login');
+	}
+	public function Gallery()
+	{
+		$this->load->view('User/Gallery');
+	}
+	public function Audio()
+	{
+		$this->load->view('User/Audio');
+	}
+	public function Video()
+	{
+		$this->load->view('User/Video');
 	}
 }
