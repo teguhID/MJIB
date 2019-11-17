@@ -1,5 +1,5 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\Layout\Header.php");?>
-<link href="<?php echo base_url('assets/user/')?>css/custom.css" rel='stylesheet' type='text/css' />
+
 
 <!-- banner -->
 <section class="banner-1">
@@ -17,7 +17,7 @@
         <!--Accordion-->
         <button class="accordion">Maulid Nabi</button>
         <div class="panel">
-            <div class="row gallery-info mt-md-5 pt-5">
+            <div class="row gallery-info mt-md-5">
                 <div class="col-md-3 col-sm-6 gallery-grids">
                     <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
                         <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt="" class="img-fluid zoom-img">
@@ -79,185 +79,171 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <button class="accordion">Isra' Mi'raj</button>
-            <div class="panel">
-                <div class="row gallery-info mt-md-5 pt-5">
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g6.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g7.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g8.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g9.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g1.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g2.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 gallery-grids">
-                        <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                            <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt=""
-                                class="img-fluid zoom-img">
-                        </a>
-                    </div>
+        <br>
+
+        <button class="accordion">Isra' Mi'raj</button>
+        <div class="panel">
+            <div class="row gallery-info mt-md-5">
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
                 </div>
-
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                    <div class="row gallery-info mt-md-5 pt-5">
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g6.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g7.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g8.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g9.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g1.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g2.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-6 gallery-grids">
-                            <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
-                                <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt=""
-                                    class="img-fluid zoom-img">
-                            </a>
-                        </div>
-                    </div>
-
-                    <script type="text/javascript">
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
-
-                    for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var panel = this.nextElementSibling;
-                            if (panel.style.maxHeight) {
-                                panel.style.maxHeight = null;
-                            } else {
-                                panel.style.maxHeight = panel.scrollHeight + "px";
-                            }
-                        });
-                    }
-                    </script>
-
-
-                    <!--end Accordion-->
-
-
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
                 </div>
-                <script src="<?php echo base_url('assets/user/')?>js/lightbox-plus-jquery.min.js"></script>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g6.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g7.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g8.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g9.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g1.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g2.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
             </div>
+        </div>
+
+        <br>
+
+        <button class="accordion">Haul Cidodol</button>
+        <div class="panel">
+            <div class="row gallery-info mt-md-5">
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g6.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g7.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g8.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g9.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g1.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g2.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g3.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g4.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 gallery-grids">
+                    <a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        <img src="<?php echo base_url('assets/user/')?>images/g5.jpg" alt="" class="img-fluid zoom-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("activee");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        </script>
+
+
+        <!--end Accordion-->
+
+
+
+        <script src="<?php echo base_url('assets/user/')?>js/lightbox-plus-jquery.min.js"></script>
+    </div>
+    </div>
+    </div>
 </section>
 <!--//gallery-->
 

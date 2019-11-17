@@ -1,9 +1,14 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\Layout\Header.php");?>
+
 <!-- banner -->
 <section class="banner-1">
 </section>
 <!-- //banner -->
 <!--/Media-->
+
+<style>
+
+</style>
 
 <section class="contact py-5">
     <div class="container py-md-4 mt-md-3">
@@ -15,7 +20,7 @@
                 <a href="http://bit.ly/Majelisjalsatulitsnain"><i class="fab fa-facebook-f"></i></a></li>
                 <a href="http://bit.ly/habibumaralhamid"><i class="fab fa-instagram instagram"
                         aria-hidden="true"></i></a>
-                <a href="http://bit.ly/jalsatulitsnainbaalawy"><i class="fab fa-youtube-square"></i></a>
+                <a href="http://bit.ly/jalsatulitsnainbaalawy"><i class="ytb fab fa-youtube-square"></i></a>
                 <a href="http://bit.ly/6282230200031"><i class="fa fa-phone-square"></i></a>
             </div>
         </center>
