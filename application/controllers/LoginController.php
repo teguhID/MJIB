@@ -14,7 +14,7 @@ class LoginController extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('Login/index');
+		$this->load->view('User/login');
 	}
 
 	public function Login()
@@ -27,12 +27,12 @@ class LoginController extends CI_Controller {
 				redirect('Admin/index');
 			} else {
 				echo "<script>alert('Username dan Password tidak cocok');</script>";
-				$this->load->view('Login/index');
+				$this->load->view('User/login');
 			}
 		}
 		else{
 			echo "<script>alert('Ada Kesalahan');</script>";
-			$this->load->view('Login/index');
+			$this->load->view('User/login');
 		}
 	}
 

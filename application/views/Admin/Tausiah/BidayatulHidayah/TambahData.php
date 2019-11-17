@@ -20,7 +20,7 @@ $deleteImage = 'Admin/delete_image';
 		<label><strong>Content</strong></label>
 		<textarea id="mytextarea" name="content"><p style="color:grey">Tulis Konten Anda Di Sini</p></textarea>
 	</div>
-	<input type="text" name="updated_at" value=<?php echo date("Y-m-d");?> hidden>
+	<input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 

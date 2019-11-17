@@ -83,17 +83,13 @@
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/NashoihDiniyah" style="font-size: 14px;">Nashoih Diniyah</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahHadistJibril" style="font-size: 14px;">Syarah Hadist Jibril</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahRatibAlHaddad" style="font-size: 14px;">Syarah Ratib Al Haddad</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/JadwalAbuya" style="font-size: 14px;">Jadwal Abuya</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Jadwal MJIB</span>
+        <a class="nav-link" href="<?php echo site_url('')?>/Admin/Jadwal">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Jadwal</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SocialMedia" style="font-size: 14px;">Jadwal Abuya</a>
-        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

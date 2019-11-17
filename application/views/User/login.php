@@ -114,7 +114,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 
 	<!-- login -->
-	<form action="" method="">
+
 		<div class="page login-page">
 			<div class="container d-flex align-items-center">
 				<div class="form-holder has-shadow">
@@ -135,30 +135,26 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<!-- Form Panel    -->
 						<div class="col-lg-6 bg-white">
 							<div class="form d-flex align-items-center">
-								<div class="content">
-
+								<form action="<?php echo site_url('LoginController/Login')?>" method="POST">
 									<div class="form-group">
 										<input id="login-username" type="text" name="username" required
 											data-msg="Please enter your username" class="input-material"
 											placeholder="Username">
-										<label for="login-username" class="label-material"></label>
 									</div>
 									<div class="form-group">
 										<input id="login-password" type="password" name="password" required
 											data-msg="Please enter your password" class="input-material"
 											placeholder="Password">
-										<label for="login-password" class="label-material"></label><br><br>
-										<button type="submit" class="btn btn-primary">Login</button>
-										<!-- This should be submit button but I replaced it with <a> for demo purposes-->
-										<a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an
-											account? </small><a href="admin/register.html" class="signup">Signup</a>
 									</div>
-								</div>
+									<div class="row justify-content-center">
+										<button type="submit" class="btn btn-primary col-4" name="login">Login</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-	</form>
+
 
 	<!--end login-->
 

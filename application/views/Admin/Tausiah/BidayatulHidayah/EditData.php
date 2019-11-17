@@ -32,7 +32,7 @@
           <textarea class="form-control" id="mytextarea" name="content" rows="4"><?php echo $data['content'];?></textarea>
       </div>
     </div>
-    <input type="text" name="updated_at" value=<?php echo date("Y-m-d");?> hidden>
+    <input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 <?php }; ?>

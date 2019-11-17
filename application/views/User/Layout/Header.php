@@ -105,7 +105,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="<?php echo site_url('')?>/User/Login">Login</a>
+                            <a class="nav-link" href="<?php echo site_url('')?>/LoginController/index">Login</a>
                         </li>
                     </ul>
                 </div>

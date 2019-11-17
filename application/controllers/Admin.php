@@ -330,13 +330,55 @@ class Admin extends CI_Controller {
     {
         $this->load->view('Admin/Tausiah/AqidatulAwam');
     }
-
     // =================================>>>>== TAUSIAH ==<<<<================================== //
-    // JADWAL MJIB
-    public function JadwalAbuya()
+
+    
+    // =================================>>>>== JADWAL ==<<<<================================== //
+    public function Jadwal()
     {
-        $this->load->view('Admin/JadwalMJIB/JadwalAbuya');
+        $data['JadwalData'] = $this->AdminModel->ListJadwal('jadwal')->result_array();
+        $this->load->view('Admin/Jadwal/Jadwal', $data);
     }
+    public function BuatJadwal()
+    {
+        $this->load->view('Admin/Jadwal/BuatJadwal');
+    }
+    public function PostJadwal()
+    {
+        $data['judul'] = $this->input->post('judul');
+        $data['hari'] = $this->input->post('hari');
+        $data['isi'] = $this->input->post('isi');
+        $data['jam'] = $this->input->post('jam');
+        $data['keterangan'] = $this->input->post('keterangan');
+        $data['updated_at'] = $this->input->post('updated_at');
+        $this->AdminModel->CreateTausiah($data, 'jadwal');
+        return redirect('Admin/Jadwal', 'refresh');
+    }
+    public function Detailjadwal($id, $page)
+    {
+        $data['JadwalData'] = $this->AdminModel->DetailJadwal($id,'jadwal')->result_array();
+        $this->load->view('Admin/Jadwal/' . $page, $data);
+    }
+    public function UpdateJadwal($id)
+    {
+        $data['judul'] = $this->input->post('judul');
+        $data['hari'] = $this->input->post('hari');
+        $data['isi'] = $this->input->post('isi');
+        $data['jam'] = $this->input->post('jam');
+        $data['keterangan'] = $this->input->post('keterangan');
+        $data['updated_at'] = $this->input->post('updated_at');
+        $this->AdminModel->UpdateJadwal($id, $data, 'jadwal');
+
+        $data['JadwalData'] = $this->AdminModel->DetailJadwal($id,'jadwal')->result_array();
+        $this->load->view('Admin/Jadwal/DetailJadwal', $data);
+    }
+    public function HapusJadwal($id)
+      {
+          $this->AdminModel->DeleteJadwal($id, 'jadwal');
+          return redirect('Admin/Jadwal', 'refresh');
+      }
+    // =================================>>>>== JADWAL ==<<<<================================== //
+
 
     //MEDIA
     public function SocialMedia()

@@ -65,4 +65,30 @@ class AdminModel extends CI_Model {
     }
     // =================================>>>>== TAUSIAH ==<<<<================================== //
 
+     // =================================>>>>== JADWAL ==<<<<================================== //
+    public function ListJadwal($tabel)
+    {
+        return $this->db->get($tabel);
+    }
+    public function CreateJadwal($data, $tabel)
+    {
+        return $this->db->insert($tabel, $data);
+    }
+    public function DetailJadwal($id, $tabel)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get($tabel);
+    }
+    public function UpdateJadwal($id, $data, $tabel)
+    {
+        $this->db->where('id', $id);
+        return $this->db->update($tabel, $data);
+    }
+    public function DeleteJadwal($id, $tabel)
+    {
+        $this->db->where('id', $id);
+        return $this->db->delete($tabel);
+    }
+    // =================================>>>>== JADWAL ==<<<<================================== //
+
 }
