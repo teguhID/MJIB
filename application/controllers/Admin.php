@@ -380,22 +380,22 @@ class Admin extends CI_Controller {
     // =================================>>>>== JADWAL ==<<<<================================== //
 
 
-    //MEDIA
-    public function SocialMedia()
+    // =================================>>>>== MEDIA ==<<<<================================== //
+    public function Media()
     {
-        $this->load->view('Admin/Media/SocialMedia');
+        $this->load->view('Admin/Media/Media');
     }
-    public function Qasidah()
-    {
-        $this->load->view('Admin/Media/Qasidah');
-    }
+    // =================================>>>>== MEDIA ==<<<<================================== //
 
-    //EVENT
+
+    // =================================>>>>== EVENT ==<<<<================================== //
     public function Event()
     {
         $this->load->view('Admin/Event/Event');
     }
+    // =================================>>>>== EVENT ==<<<<================================== //
 
+    
     // DOKUMENTASI
     public function Foto()
     {

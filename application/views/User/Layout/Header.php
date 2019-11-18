@@ -29,6 +29,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!-- //Custom Theme files -->
     <!-- online fonts -->
     <!-- titles -->
+    <link href="<?php echo base_url('assets/user/')?>css/custom.css" rel='stylesheet' type='text/css' />
     <link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <!-- body -->
     <link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">

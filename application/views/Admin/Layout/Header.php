@@ -92,17 +92,13 @@
         </a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+        <a class="nav-link" href="<?php echo site_url('')?>/Admin/Media">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Media</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/Qasidah" style="font-size: 14px;">Social Media</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/Event" style="font-size: 14px;">Qasidah</a>
-        </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" href="<?php echo site_url('')?>/Admin/">
+        <a class="nav-link" href="<?php echo site_url('')?>/Admin/Event">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Event</span>
         </a>
