@@ -92,25 +92,25 @@ class AdminModel extends CI_Model {
     // =================================>>>>== JADWAL ==<<<<================================== //
 
      // =================================>>>>== EVENT ==<<<<================================== //
-    public function ListJadwal($tabel)
+    public function ListEvent($tabel)
     {
         return $this->db->get($tabel);
     }
-    public function CreateJadwal($data, $tabel)
+    public function CreateEvent($data, $tabel)
     {
         return $this->db->insert($tabel, $data);
     }
-    public function DetailJadwal($id, $tabel)
+    public function DetailEvent($id, $tabel)
     {
         $this->db->where('id', $id);
         return $this->db->get($tabel);
     }
-    public function UpdateJadwal($id, $data, $tabel)
+    public function UpdateEvent($id, $data, $tabel)
     {
         $this->db->where('id', $id);
         return $this->db->update($tabel, $data);
     }
-    public function DeleteJadwal($id, $tabel)
+    public function DeleteEvent($id, $tabel)
     {
         $this->db->where('id', $id);
         return $this->db->delete($tabel);

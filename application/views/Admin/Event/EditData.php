@@ -27,15 +27,9 @@
       </div>
     </div>
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label">Kitab</label>
-      <div class="col-sm-8">
-        <input type="text" name="kitab" class="form-control" value="<?php echo $data['kitab'];?>">
-      </div>
-    </div>
-    <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label">Konten</label>
       <div class="col-sm-8">
-        <textarea class="form-control" name="content" rows="4" cols="100"><?php echo $data['content'];?></textarea>
+          <textarea class="form-control" id="mytextarea" name="content" rows="4"><?php echo $data['content'];?></textarea>
       </div>
     </div>
     <input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>

@@ -3,6 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
+	public function __construct()
+	{
+		parent::__construct();
+        $this->load->model('LoginModel');
+        $this->load->model('AdminModel');
+        $this->load->library('session');
+	}
+	
 	public function index()
 	{
 		$this->load->view('User/index');
@@ -13,7 +21,9 @@ class User extends CI_Controller {
 	}
 	public function Tausiah()
 	{
-		$this->load->view('User/tausiah');
+		//ganti tabel database
+		$data['tausiahData'] = $this->AdminModel->ListTausiah('bidayatul_hidayah')->result_array();
+		$this->load->view('User/tausiah', $data);
 	}
 	public function Jadwal()
 	{

@@ -108,6 +108,12 @@ class Admin extends CI_Controller {
 
     // =================================>>>>== TAUSIAH ==<<<<================================== //
 
+
+
+
+
+
+    //ganti tabel database ke tausiah
     // ============================================ Bidayatul Hidayah ============================================ //
     public function BidayatulHidayah()
     {
@@ -144,6 +150,16 @@ class Admin extends CI_Controller {
     }
     // ============================================ Bidayatul Hidayah ============================================ //
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     // ============================================ Ihya Ulumuddin =============================================== // 
     public function IhyaUlumuddin()
     {
@@ -390,12 +406,41 @@ class Admin extends CI_Controller {
 
     // =================================>>>>== EVENT ==<<<<================================== //
     public function Event()
-    {
-        $this->load->view('Admin/Event/Event');
-    }
+     {
+         $data['EventData'] = $this->AdminModel->ListEvent('event')->result_array();
+         $this->load->view('Admin/Event/Event', $data);
+     }
+     public function EventHalamanBuatData()
+     {
+         $this->load->view('Admin/Event/TambahData');
+     }
+     public function EventBuatData()
+     {
+         $this->CreateDataEvent('./assets/admin/img/event/', 'event', 'Admin/Event');
+     }
+     public function EventHalamanEditData($id)
+     {
+         $data['SyarahHadistJibril'] = $this->AdminModel->DetailTausiah($id, 'syarah_hadist_jibril')->result_array();
+         $this->load->view('Admin/Tausiah/SyarahHadistJibril/EditData', $data);
+     }
+     public function EventEditData($id)
+     {
+        $this->EditDataTausiah( './assets/admin/img/syarahHadistJibril/', 'syarah_hadist_jibril', $id, 'Admin/DetailSyarahHadistJibril/' );
+     }
+     public function DetailEvent($id)
+     {
+         $data['SyarahHadistJibril'] = $this->AdminModel->DetailTausiah($id, 'syarah_hadist_jibril')->result_array();
+         $this->load->view('Admin/Tausiah/SyarahHadistJibril/DetailData', $data);
+     }
+     public function EventHapus($id, $image)
+     {
+         unlink('./assets/admin/img/syarahHadistJibril/'. $image);
+         $this->AdminModel->DeleteTausiah($id, 'syarah_hadist_jibril');
+         return redirect('Admin/SyarahHadistJibril', 'refresh');
+     }
     // =================================>>>>== EVENT ==<<<<================================== //
 
-    
+
     // DOKUMENTASI
     public function Foto()
     {
@@ -410,7 +455,7 @@ class Admin extends CI_Controller {
 
 
 
-
+// ============================================ TAUSIAH ========================================//
     // $path = directory penyimpanan foto
     // $tabel = tabel database yang akan di edit
     // $redirect = redirect function halaman awal
@@ -418,6 +463,7 @@ class Admin extends CI_Controller {
     {
         $data['image'] = $this->input->post('image');
         $data['judul'] = $this->input->post('judul');
+        $data['kitab'] = $this->input->post('kitab');
         $data['content'] = $this->input->post('content');
         $data['username'] = $this->input->post('username');
         $data['updated_at'] = $this->input->post('updated_at');
@@ -453,6 +499,7 @@ class Admin extends CI_Controller {
      {
         $imageName =  $this->input->post('imageVal');
         $data['judul'] = $this->input->post('judul');
+        $data['kitab'] = $this->input->post('kitab');
         $data['content'] = $this->input->post('content');
         $data['username'] = $this->input->post('username');
         $data['updated_at'] = $this->input->post('updated_at');
@@ -482,6 +529,84 @@ class Admin extends CI_Controller {
             }
         }
         $this->AdminModel->UpdateTausiah($id, $data, $tabel);
+        return redirect($redirect . $id, 'refresh');
+     }
+
+
+// ============================================ EVENT ========================================//
+     // $path = directory penyimpanan foto
+    // $tabel = tabel database yang akan di edit
+    // $redirect = redirect function halaman awal
+    public function CreateDataEvent($path, $tabel, $redirect)
+    {
+        $data['image'] = $this->input->post('image');
+        $data['judul'] = $this->input->post('judul');
+        $data['content'] = $this->input->post('content');
+        $data['tanggal'] = $this->input->post('tanggal');
+        $data['username'] = $this->input->post('username');
+        $data['updated_at'] = $this->input->post('updated_at');
+
+        if ($_FILES['image']['size'] == 0) {
+            $data['image'] = $this->input->post('imageVal');
+        } 
+        else {
+            $data['image'] = str_replace(' ', '_', date("dmyhis") . $_FILES['image']['name']);
+            $config['upload_path'] = $path;
+            $config['allowed_types'] = 'jpg|png|gif|jpeg';
+            $config['file_name'] = $data['image'];
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('image'))
+            {
+                    array('error' => $this->upload->display_errors());
+            }
+            else
+            {
+                    array('upload_data' => $this->upload->data());
+            }
+        }
+
+        $this->AdminModel->CreateEvent($data, $tabel);
+        return redirect($redirect, 'refresh');
+    }
+
+    // $path = directory penyimpanan foto
+    // $tabel = tabel database yang akan di edit
+    // $id = passing id ke model
+    // $redirect = redirect function halaman awal
+     public function EditDataEvent($path, $tabel, $id, $redirect)
+     {
+        $imageName =  $this->input->post('imageVal');
+        $data['judul'] = $this->input->post('judul');
+        $data['content'] = $this->input->post('content');
+        $data['tanggal'] = $this->input->post('tanggal');
+        $data['username'] = $this->input->post('username');
+        $data['updated_at'] = $this->input->post('updated_at');
+
+        if ($_FILES['image']['size'] == 0) {
+            $data['image'] = $imageName;
+        } 
+        else {
+            if ($imageName == null) {
+                
+            }
+            else {
+                unlink($path . $imageName);
+            }
+            $data['image'] = str_replace(' ', '_', date("dmyhis") . $_FILES['image']['name']);
+            $config['upload_path'] = $path;
+            $config['allowed_types'] = 'jpg|png|gif|jpeg';
+            $config['file_name'] = $data['image'];
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('image'))
+            {
+                    array('error' => $this->upload->display_errors());
+            }
+            else
+            {
+                    array('upload_data' => $this->upload->data());
+            }
+        }
+        $this->AdminModel->UpdateEvent($id, $data, $tabel);
         return redirect($redirect . $id, 'refresh');
      }
 }

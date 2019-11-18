@@ -18,7 +18,6 @@
             <div class="card-body">
                 <h3 class="card-title"><?php echo $data['judul'];?></h3>
                 <p class="card-text"><small class="text-muted">Penulis : <?php echo $data['username'];?></small></p>
-                <p class="card-text"><small class="text-muted">Kitab : <?php echo $data['kitab'];?></small></p>
                 <p class="card-text"><?php echo $data['content'];?></p>
                 <p class="card-text"><small class="text-muted">Update : <?php echo $data['updated_at'];?></small></p>
             </div>

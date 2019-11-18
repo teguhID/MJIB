@@ -1,9 +1,9 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Header.php");
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");
 $uploadImage = 'Admin/upload_image';
 $deleteImage = 'Admin/delete_image';
 ?>
 
-<form action="<?php echo site_url('Admin/BidayatulHidayahBuatData');?>" method="post" enctype="multipart/form-data" style="padding:30px">
+<form action="<?php echo site_url('Admin/EventBuatData');?>" method="post" enctype="multipart/form-data" style="padding:30px">
 	<div class="form-group">
 	  <label><strong>Image</strong></label>
 	  <input type="file" class="form-control" name="image">
@@ -17,15 +17,16 @@ $deleteImage = 'Admin/delete_image';
 	  <input type="text" class="form-control" name="judul">
 	</div>
 	<div class="form-group">
-	  <label><strong>Kitab</strong></label>
-	  <input type="text" class="form-control" name="kitab">
+	  <label><strong>Tanggal Pelaksanaan</strong></label>
+	  <input type="date" class="form-control" id="tanggal" name="tanggal" >
 	</div>
 	<div class="form-group">
 		<label><strong>Content</strong></label>
-		<textarea class="form-control" name="content" rows="4" cols="100">Tulis Konten Anda Di Sini</textarea>
+		<textarea id="mytextarea" name="content"><p style="color:grey">Tulis Konten Anda Di Sini</p></textarea>
 	</div>
-	<input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>
+	<input type="text" name="updated_at" value=<?php echo date("Y-m-d");?> hidden>
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Footer.php");?>
+
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
