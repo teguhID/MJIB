@@ -20,7 +20,7 @@
                         <?php foreach ($tausiahData as $data) { ?>
                             <!-- post-->
                             <div class="post col-xl-6">
-                                <div class="post-thumbnail"><a href="post.html"><img src="<?php echo base_url('assets/admin/img/bidayatulHidayah/' . $data['image'])?>" alt="..." class="img-fluid"></a></div>
+                                <div class="post-thumbnail"><a href="post.html"><img src="<?php echo base_url('assets/admin/img/tausiah/' . $data['image'])?>" alt="..." class="img-fluid" style="width:350px; height:230px;"></a></div>
                                 <div class="post-details">
                                     <div class="post-meta d-flex justify-content-between">
                                         <div class="date meta-last"><?php echo date_format(date_create($data['updated_at']),"d M Y")?></div>
@@ -31,8 +31,8 @@
                                     <p class="text-"><?php echo substr($data['content'], 0, 100)?></p>
                                     <div class="post-footer d-flex align-items-center"><a href="#"
                                             class="author d-flex align-items-center flex-wrap">
-                                            <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/user-def.png" alt="..." class="img-fluid" width="35" height="35"></div>
-                                            <div class="title"><span><?php echo $data['username']?></span></div>
+                                            <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/user-def.png" alt="..." class="img-fluid" style="width:30px; height:30px;"></div>
+                                            <div class="title" style="margin-left:-10px"><span><?php echo $data['username']?></span></div>
                                         </a>
                                     </div>
                                 </div>

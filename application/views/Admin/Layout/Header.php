@@ -71,7 +71,7 @@
           <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiPimpinanMJIB" style="font-size: 14px;">Biografi Pimpinan MJIB</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/AqidatulAwam')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-fw fa-folder"></i>
           <span>Tausiah</span>
@@ -84,6 +84,12 @@
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahHadistJibril" style="font-size: 14px;">Syarah Hadist Jibril</a>
             <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahRatibAlHaddad" style="font-size: 14px;">Syarah Ratib Al Haddad</a>
         </div>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="<?php echo site_url('')?>/Admin/Tausiah">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Tausiah</span>
+        </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Jadwal">

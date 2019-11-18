@@ -22,7 +22,7 @@ class User extends CI_Controller {
 	public function Tausiah()
 	{
 		//ganti tabel database
-		$data['tausiahData'] = $this->AdminModel->ListTausiah('bidayatul_hidayah')->result_array();
+		$data['tausiahData'] = $this->AdminModel->ListTausiah('tausiah')->result_array();
 		$this->load->view('User/tausiah', $data);
 	}
 	public function Jadwal()

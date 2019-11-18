@@ -1,11 +1,11 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Header.php");?>
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
-<?php foreach ($BidayatulHidayah as $data) {?>
-  <form action="<?php echo site_url('Admin/BidayatulHidayahEditData/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
+<?php foreach ($tausiahData as $data) {?>
+  <form action="<?php echo site_url('Admin/TausiahEditData/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
       <?php if ($data['image'] == '') {?>
           <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
       <?php } else {?>
-          <img src="<?php echo base_url('assets/admin/img/bidayatulHidayah/' . $data['image'])?>" width="630" height="350"><br>
+          <img src="<?php echo base_url('assets/admin/img/tausiah/' . $data['image'])?>" width="630" height="350"><br>
       <?php } ?>  
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label">Image</label>
@@ -26,12 +26,22 @@
         <input type="text" name="judul" class="form-control" value="<?php echo $data['judul'];?>">
       </div>
     </div>
+
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label">Kitab</label>
       <div class="col-sm-8">
-        <input type="text" name="kitab" class="form-control" value="<?php echo $data['kitab'];?>">
+         <select name="kitab" class="form-control" value="<?php echo $data['kitab'];?>">
+          <option <?php if($data['kitab'] == 'Bidayatul Hidayah'){ echo 'selected="selected"'; } ?> value="Bidayatul Hidayah">Bidayatul Hidayah</option>
+          <option <?php if($data['kitab'] == 'Aqidatul Awam'){ echo 'selected="selected"'; } ?> value="Aqidatul Awam">Aqidatul Awam</option>
+          <option <?php if($data['kitab'] == 'Nashohih Diniyah'){ echo 'selected="selected"'; } ?> value="Nashohih Diniyah">Nashohih Diniyah</option>
+          <option <?php if($data['kitab'] == 'Ihya Ulumuddin'){ echo 'selected="selected"'; } ?> value="Ihya Ulumuddin">Ihya Ulumuddin</option>
+          <option <?php if($data['kitab'] == 'Riyadhus Shalihin'){ echo 'selected="selected"'; } ?> value="Riyadhus Shalihin">Riyadhus Shalihin</option>
+          <option <?php if($data['kitab'] == 'Syarah Ratibul Haddad'){ echo 'selected="selected"'; } ?> value="Syarah Ratibul Haddad">Syarah Ratibul Haddad</option>
+          <option <?php if($data['kitab'] == 'Syarah Hadits Jibril'){ echo 'selected="selected"'; } ?> value="Syarah Hadits Jibril">Syarah Hadits Jibril</option>
+        </select>
       </div>
     </div>
+
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label">Konten</label>
       <div class="col-sm-8">
@@ -43,4 +53,4 @@
   </form>
 <?php }; ?>
 
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Footer.php");?>
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
