@@ -175,37 +175,6 @@ input.input-material.is-invalid~label {
 	font-size: 1.5em;
 }
 
-@media (max-width: 991px) {
-
-	.login-page .info,
-	.login-page .form {
-		min-height: auto !important;
-	}
-
-	.login-page .info {
-		padding-top: 100px !important;
-		padding-bottom: 100px !important;
-	}
-}
-
-@media (max-width: 576px) {
-	.content .txttitle {
-		text-align: center;
-		margin-left: -25px;
-	}
-
-	.logo img {
-		margin: auto;
-
-	}
-}
-
-/*
-* ====jjjj======================================================
-*    END LOGIN PAGE
-* ==========================================================
-*/
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	background-color: #8fb7a5;
 	color: #FFF;
@@ -250,3 +219,36 @@ p {
 	content: "\2796";
 	/* Unicode character for "minus" sign (-) */
 }
+
+
+@media (max-width: 991px) {
+
+	.login-page .info,
+	.login-page .form {
+		min-height: auto !important;
+	}
+
+	.login-page .info {
+		padding-top: 100px !important;
+		padding-bottom: 100px !important;
+	}
+}
+
+@media (max-width: 576px) {
+	.content .txttitle {
+		text-align: center;
+		margin-left: -25px;
+	}
+
+	.logo img {
+		margin: auto;
+
+	}
+}
+
+/*
+* ====jjjj======================================================
+*    END LOGIN PAGE
+* ==========================================================
+*/
+/* Style the buttons that are used to open and close the accordion panel */
