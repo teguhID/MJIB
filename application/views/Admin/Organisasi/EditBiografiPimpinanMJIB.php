@@ -1,5 +1,9 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
+<ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey; margin-bottom: -20px">
+    <li class="breadcrumb-item active"><Strong>Edit Biografi Pimpinan MJIB</Strong></li>
+</ol>
+
 <?php foreach ($biografiPimpinanMJIB as $data): ?>
 <form action="<?php echo site_url('Admin/UpdateBiografiPimpinanMJIB/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
 <?php if ($data['image'] == '') {?>

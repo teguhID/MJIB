@@ -1,5 +1,9 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
+<ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
+    <li class="breadcrumb-item active"><Strong>Edit Data Tausiah</Strong></li>
+</ol>
+
 <?php foreach ($tausiahData as $data) {?>
   <form action="<?php echo site_url('Admin/TausiahEditData/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
       <?php if ($data['image'] == '') {?>

@@ -3,11 +3,8 @@
       
 
         <!-- Breadcrumbs-->
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="<?php echo base_url('assets/admin/')?>#">Dashboard</a>
-          </li>
-          <li class="breadcrumb-item active">Overview</li>
+        <ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
+          <li class="breadcrumb-item active"><Strong>Dashboard</Strong></li>
         </ol>
 
         <!-- Icon Cards-->

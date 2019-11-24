@@ -33,6 +33,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <!-- body -->
     <link href="//fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <script src="<?php echo base_url('assets/user/')?>js/jquery-2.2.3.min.js"></script>
+
+    <!-- PAGINATION -->
+    <script src="<?php echo base_url('assets/user/')?>js/jquery.simplePagination.js"></script>
+    <link href="<?php echo base_url('assets/user/')?>css/pagination.css" rel='stylesheet' type='text/css' />
 </head>
 
 <body>

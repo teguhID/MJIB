@@ -1,5 +1,9 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
+<ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
+    <li class="breadcrumb-item active"><Strong>Data Event</Strong></li>
+</ol>
+
 <div class="container">
 <a href="<?php echo site_url('Admin/EventHalamanBuatData')?>" class="btn btn-success" style="margin-right: 10px; margin-bottom:-20px"><i class="fas fa-plus-circle" style="margin-right:8px"></i> Tambah Data</a>
   <div class="row justify-content-center">

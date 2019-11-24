@@ -1,5 +1,9 @@
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
+<ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
+    <li class="breadcrumb-item active"><Strong>Detail Jadwal</Strong></li>
+</ol>
+
 <?php foreach ($JadwalData as $data): ?>
     <a href="<?php echo site_url('Admin/Jadwal')?>" class="btn-lg btn-info"><i class="fas fa-home"></i></a>
     <a href="<?php echo site_url('Admin/Jadwal')?>" class="btn-lg btn-secondary"><i class="fas fa-globe"></i></a>

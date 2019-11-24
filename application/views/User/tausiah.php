@@ -15,12 +15,14 @@
             <main class="posts-listing col-lg-8">
                 <div class="container">
                     <div class="row">
-
+                    
                     <!-- ///////////// DATA /////////// -->
                         <?php foreach ($tausiahData as $data) { ?>
                             <!-- post-->
-                            <div class="post col-xl-6">
-                                <div class="post-thumbnail"><a href="post.html"><img src="<?php echo base_url('assets/admin/img/tausiah/' . $data['image'])?>" alt="..." class="img-fluid" style="width:350px; height:230px;"></a></div>
+                            
+                            <div class="post col-xl-6 content-pagination">
+                            <div class="list-pagination">
+                                <div class="post-thumbnail"><a href="post.html"><img src="<?php echo base_url('assets/admin/img/tausiah/' . $data['image'])?>" alt="..." class="tausiah-foto" style="width:100%; height:19rem;"></a></div>
                                 <div class="post-details">
                                     <div class="post-meta d-flex justify-content-between">
                                         <div class="date meta-last"><?php echo date_format(date_create($data['updated_at']),"d M Y")?></div>
@@ -28,7 +30,7 @@
                                     </div><a href="post.html">
                                         <h3 class=""><?php echo $data['judul']?></h3>
                                     </a>
-                                    <p class="text-"><?php echo substr($data['content'], 0, 100)?></p>
+                                    <p class="text"><?php echo substr($data['content'], 0, 100)?></p>
                                     <div class="post-footer d-flex align-items-center"><a href="#"
                                             class="author d-flex align-items-center flex-wrap">
                                             <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/user-def.png" alt="..." class="img-fluid" style="width:30px; height:30px;"></div>
@@ -37,38 +39,26 @@
                                     </div>
                                 </div>
                             </div>
+                            </div>
                         <?php }?>
                     <!-- ///////////// DATA /////////// -->
-
                     </div>
-                    <!-- Pagination -->
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-template d-flex justify-content-center">
-                            <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-left"></i></a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">1</a></li>
-                            <li class="page-item"><a href="#" class="page-link">2</a></li>
-                            <li class="page-item"><a href="#" class="page-link">3</a></li>
-                            <li class="page-item"><a href="#" class="page-link"> <i class="fa fa-angle-right"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div id="pagination-container"></div>
                 </div>
             </main>
             <aside class="col-lg-4">
                 <!-- Widget [Search Bar Widget]-->
+                <style>
+                .widget.search {
+                    margin-top: 0px;
+                }
 
-        <style>
-        .widget.search {
-            margin-top: 0px;
-        }
-
-        @media (max-width: 576px) {
-            .widget.search {
-                margin-top: -150px;
-            }
-        }
-        </style>
+                @media (max-width: 576px) {
+                    .widget.search {
+                        margin-top: -150px;
+                    }
+                }
+                </style>
 
                 <div class="widget search">
                     <header>
@@ -163,6 +153,27 @@
     </div>
 </section>
 <!--end tausiah-->
+<script>
+    $(document).ready(function () {
+        var items = $(".content-pagination .list-pagination");
+        var numItems = items.length;
+        var perPage = 4;
 
+        items.slice(perPage).hide();
 
+        $('#pagination-container').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            displayedPages : 3,
+            edges: 1,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                items.hide().slice(showFrom, showTo).show();
+            }
+        });
+    });
+</script>
 <?php $basedir = realpath(__DIR__); include($basedir . "..\Layout\Footer.php");?>

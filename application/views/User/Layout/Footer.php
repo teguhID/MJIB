@@ -31,8 +31,6 @@
     </div>
 </div>
 <!-- js-->
-<script src="<?php echo base_url('assets/user/')?>js/jquery-2.2.3.min.js"></script>
-<!-- js-->
 <!-- Banner Responsiveslides -->
 <script src="<?php echo base_url('assets/user/')?>js/responsiveslides.min.js"></script>
 <script>
@@ -65,6 +63,7 @@ $('.counter').countUp();
 <!-- //stats -->
 <!--pop-up-box -->
 <script src="<?php echo base_url('assets/user/')?>js/jquery.magnific-popup.js"></script>
+<script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
 <script>
 $(document).ready(function() {
     $('.popup-with-zoom-anim').magnificPopup({
@@ -82,8 +81,7 @@ $(document).ready(function() {
 </script>
 <!-- //pop-up-box -->
 <!-- Bootstrap Core JavaScript -->
-<script src="<?php echo base_url('assets/user/')?>js/bootstrap.js ">
-</script>
+<script src="<?php echo base_url('assets/user/')?>js/bootstrap.js "></script>
 <!-- //Bootstrap Core JavaScript -->
 </body>
 

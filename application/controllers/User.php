@@ -8,12 +8,14 @@ class User extends CI_Controller {
 		parent::__construct();
         $this->load->model('LoginModel');
         $this->load->model('AdminModel');
-        $this->load->library('session');
+		$this->load->library('session');
+		$this->load->library('pagination');
 	}
 	
 	public function index()
 	{
 		$this->load->view('User/index');
+		// $this->load->view('test');
 	}
 	public function Guru()
 	{
@@ -21,17 +23,18 @@ class User extends CI_Controller {
 	}
 	public function Tausiah()
 	{
-		//ganti tabel database
 		$data['tausiahData'] = $this->AdminModel->ListTausiah('tausiah')->result_array();
 		$this->load->view('User/tausiah', $data);
 	}
 	public function Jadwal()
 	{
-		$this->load->view('User/jadwal');
+		$data['jadwalData'] = $this->AdminModel->ListJadwal('jadwal')->result_array();
+		$this->load->view('User/jadwal', $data);
 	}
 	public function Event()
 	{
-		$this->load->view('User/event');
+		$data['eventData'] = $this->AdminModel->ListEvent('event')->result_array();
+		$this->load->view('User/event', $data);
 	}
 	public function Media()
 	{

@@ -24,6 +24,7 @@ class LoginController extends CI_Controller {
 			$password = $this->input->post('password');
 			$query = $this->LoginModel->Login($username, $password);
 			if ($query->num_rows() > 0) {
+				echo "<script>alert('Login Berhasil');</script>";
 				redirect('Admin/index');
 			} else {
 				echo "<script>alert('Username dan Password tidak cocok');</script>";

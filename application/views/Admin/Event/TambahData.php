@@ -3,6 +3,10 @@ $uploadImage = 'Admin/upload_image';
 $deleteImage = 'Admin/delete_image';
 ?>
 
+<ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
+    <li class="breadcrumb-item active"><Strong>Tambah Event</Strong></li>
+</ol>
+
 <form action="<?php echo site_url('Admin/EventBuatData');?>" method="post" enctype="multipart/form-data" style="padding:30px">
 	<div class="form-group">
 	  <label><strong>Image</strong></label>
