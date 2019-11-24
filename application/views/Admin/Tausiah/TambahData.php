@@ -34,10 +34,12 @@ $deleteImage = 'Admin/delete_image';
 	</div>
 	<div class="form-group">
 		<label><strong>Content</strong></label>
-		<textarea class="form-control" name="content" rows="4" cols="100" required>Tulis Konten Anda Di Sini</textarea>
+		<textarea class="form-control" name="content" rows="12" cols="100" required>Tulis Konten Anda Di Sini</textarea>
 	</div>
 	<input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<div class="d-flex justify-content-center">
+		<button type="submit" class="buttonfx curtainup">Submit</button>
+	</div>
 </form>
 
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>

@@ -16,6 +16,7 @@
   <script src="<?php echo base_url('assets/admin/')?>vendor/jquery/jquery.min.js"></script>
   <link href="<?php echo base_url('assets/admin/')?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link href="<?php echo base_url('assets/admin/')?>css/sb-admin.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/admin/')?>css/custom.css" rel="stylesheet">
   <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
   <script>
   tinymce.init({
@@ -26,7 +27,7 @@
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand navbar-dark static-top">
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="<?php echo base_url('assets/admin/')?>#">
       <i class="fas fa-bars"></i>
@@ -57,61 +58,47 @@
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-home"></i>
           <span>Dashboard</span>
         </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Organisasi</span>
+          <i class="fas fa-sitemap"></i>
+          <span>About</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiMJIB" style="font-size: 14px;">Biografi MJIB</a>
-          <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiPimpinanMJIB" style="font-size: 14px;">Biografi Pimpinan MJIB</a>
+          <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiMJIB" style="font-size: 14px;">MJIB</a>
+          <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiPimpinanMJIB" style="font-size: 14px;">Guru</a>
         </div>
       </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/AqidatulAwam')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Tausiah</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BidayatulHidayah" style="font-size: 14px;">Bidayatul Hidayah</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/IhyaUlumuddin" style="font-size: 14px;">Ihya Ulumuddin</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/RiyadushSholihin" style="font-size: 14px;">Kitab Riyadush Sholihin</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/NashoihDiniyah" style="font-size: 14px;">Nashoih Diniyah</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahHadistJibril" style="font-size: 14px;">Syarah Hadist Jibril</a>
-            <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/SyarahRatibAlHaddad" style="font-size: 14px;">Syarah Ratib Al Haddad</a>
-        </div>
-      </li> -->
       <li class="nav-item dropdown">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Tausiah">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-book-reader"></i>
           <span>Tausiah</span>
         </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Jadwal">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="far fa-list-alt"></i>
           <span>Jadwal</span>
         </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Media">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-users"></i>
           <span>Media</span>
         </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Event">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-calendar-alt"></i>
           <span>Event</span>
         </a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-camera-retro"></i>
           <span>Dokumentasi</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">

@@ -137,14 +137,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<div class="form d-flex align-items-center">
 								<form action="<?php echo site_url('LoginController/Login')?>" method="POST">
 									<div class="form-group">
-										<input id="login-username" type="text" name="username" required
-											data-msg="Please enter your username" class="input-material"
-											placeholder="Username">
+										<input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material" placeholder="Username" style="padding:10px">
 									</div>
 									<div class="form-group">
-										<input id="login-password" type="password" name="password" required
-											data-msg="Please enter your password" class="input-material"
-											placeholder="Password">
+										<input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material" placeholder="Password" style="padding:10px">
 									</div>
 									<div class="row justify-content-center">
 										<button type="submit" class="btn btn-primary col-4" name="login">Login</button>

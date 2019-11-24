@@ -1,15 +1,15 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Header.php");?>
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
 
 <ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
     <li class="breadcrumb-item active"><Strong>Edit event</Strong></li>
 </ol>
 
-<?php foreach ($BidayatulHidayah as $data) {?>
-  <form action="<?php echo site_url('Admin/BidayatulHidayahEditData/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
+<?php foreach ($EventData as $data) {?>
+  <form action="<?php echo site_url('Admin/EventEditData/' . $data['id']);?>" method="post" enctype="multipart/form-data" style="padding:30px">
       <?php if ($data['image'] == '') {?>
           <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
       <?php } else {?>
-          <img src="<?php echo base_url('assets/admin/img/bidayatulHidayah/' . $data['image'])?>" width="630" height="350"><br>
+          <img src="<?php echo base_url('assets/admin/img/event/' . $data['image'])?>" width="630" height="350"><br>
       <?php } ?>  
     <div class="form-group row">
       <label for="colFormLabel" class="col-sm-2 col-form-label">Image</label>
@@ -31,14 +31,22 @@
       </div>
     </div>
     <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label">Konten</label>
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Tanggal Pelaksanaan</label>
       <div class="col-sm-8">
-          <textarea class="form-control" id="mytextarea" name="content" rows="4"><?php echo $data['content'];?></textarea>
+         <input type="date" class="form-control" id="tanggal" name="tanggal" value="<?php echo $data['tanggal'];?>" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Isi</label>
+      <div class="col-sm-8">
+        <textarea class="form-control" name="content" rows="6" cols="100" required><?php echo $data['content'];?></textarea>
       </div>
     </div>
     <input type="text" name="updated_at" value=<?php echo date("Y-m-d H:i:s");?> hidden>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="buttonfx curtainup">Submit</button>
+    </div>
   </form>
 <?php }; ?>
 
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\..\Layout\Footer.php");?>
+<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>

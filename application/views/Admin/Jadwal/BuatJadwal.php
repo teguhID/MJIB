@@ -14,8 +14,8 @@
 	  <input type="text" class="form-control" name="hari">
 	</div>
 	<div class="form-group">
-		<label><strong>Isi</strong></label>
-		<textarea id="mytextarea" name="isi"><p style="color:grey">Tulis Konten Anda Di Sini</p></textarea>
+		<label><strong>Content</strong></label>
+		<textarea class="form-control" name="isi" rows="6" cols="100" required>Tulis Konten Anda Di Sini</textarea>
 	</div>
 	<div class="form-group">
 	  <label><strong>Jam/Waktu</strong></label>

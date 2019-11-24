@@ -29,28 +29,24 @@
                                 <div class="post-thumbnail hovereffect">
                                     <a href="post.html"><img src="<?php echo base_url('assets/user/')?>images/logo/event-blog4.jpg" alt="..." class="img-fluid">
                                         <div class="texthov">
-                                            <h4>18 Oktober 2019</h4>
-                                            <a class="info" href="#">Haul Cidodol <br> detail</a>
+                                            <h4><?php echo date_format(date_create($data['tanggal']),"d F Y");?></h4>
+                                            <a class="info" href="#"><?php echo $data['judul']?> <br> detail</a>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="post-details">
                                     <div class="post-meta d-flex justify-content-between">
-                                        <div class="date meta-last">20 May | 2018</div>
-                                        <div class="category"><a href="#">Business</a></div>
+                                        <div class="date meta-last"><?php echo date_format(date_create($data['updated_at']),"d F | Y");?></div>
                                     </div>
                                     <a href="post.html">
-                                        <h3 class="h4">Haul Cidodol 2019</h3>
+                                        <h3 class="h4"><?php echo $data['judul']?></h3>
                                     </a>
-                                    <p class="text-mute">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                        do eiusmod tempor incididunt ut labore.</p>
+                                    <p class="text"><?php echo substr($data['content'], 0, 100)?></p>
                                     <div class="post-footer d-flex align-items-center">
                                         <a href="#" class="author d-flex align-items-center flex-wrap">
-                                            <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/avatar-1.jpg" alt="..." class="img-fluid"></div>
-                                            <div class="title"><span>John Doe</span></div>
+                                            <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/user-def.png" alt="..." class="img-fluid" style="width:30px; height:30px;"></div>
+                                            <div class="title"><span><?php echo $data['username']?></span></div>
                                         </a>
-                                        <div class="date"><i class="fas fa-clock"></i> 2 months ago</div>
-                                        <div class="comments meta-last"><i class="fa fa-comment" aria-hidden="true"></i>12</div>
                                     </div>
                                 </div>
                             </div>

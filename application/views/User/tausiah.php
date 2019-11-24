@@ -31,8 +31,8 @@
                                         <h3 class=""><?php echo $data['judul']?></h3>
                                     </a>
                                     <p class="text"><?php echo substr($data['content'], 0, 100)?></p>
-                                    <div class="post-footer d-flex align-items-center"><a href="#"
-                                            class="author d-flex align-items-center flex-wrap">
+                                    <div class="post-footer d-flex align-items-center">
+                                        <a href="#" class="author d-flex align-items-center flex-wrap">
                                             <div class="avatar"><img src="<?php echo base_url('assets/user/')?>images/user-def.png" alt="..." class="img-fluid" style="width:30px; height:30px;"></div>
                                             <div class="title" style="margin-left:-10px"><span><?php echo $data['username']?></span></div>
                                         </a>

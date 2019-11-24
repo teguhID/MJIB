@@ -1,16 +1,6 @@
 </div>
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer" style="box-shadow: 2px 2px 10px black;">
-            <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright © MJIB 2019</span>
-            </div>
-            </div>
-        </footer>
-
     </div>
     <!-- /.content-wrapper -->
-
   </div>
   <!-- /#wrapper -->
 
@@ -24,7 +14,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h7></h7>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>

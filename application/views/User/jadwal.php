@@ -11,17 +11,17 @@
 			<span class="w3-line black"></span>
 			<div class="row about-info-grids mt-md-5 pt-5">
 				<!-- ////////////////////////  DATA  ////////////////////////////////// -->
-			<?php foreach ($jadwalData as $data) { ?>
-				<div class="col-md-4 about-info about-info1 content-pagination" style="padding:15px">
-				<div class="list-pagination">
-					<img src="<?php echo base_url('assets/user/')?>images/logo/baalawy-brand.png" alt="">
-					<h4><?php echo $data['judul'];?></h4>
-					<div class="h4-underline"></div>
-					<P><?php echo $data['hari']?><br> <?php echo $data['isi']?> <br><?php echo $data['jam']?></P>
-					<p><b> <?php $data['keterangan']?> </b></p>
-				</div>
-				</div>
-			<?php }?>
+				<?php foreach ($jadwalData as $data) { ?>
+					<div class="col-md-4 about-info about-info1 content-pagination" style="padding:15px">
+					<div class="list-pagination">
+						<img src="<?php echo base_url('assets/user/')?>images/logo/baalawy-brand.png" alt="">
+						<h4><?php echo $data['judul'];?></h4>
+						<div class="h4-underline"></div>
+						<P><?php echo substr($data['isi'], 0, 100)?> <br><strong><?php echo $data['jam']?></strong></P>
+						<p><b> <?php $data['keterangan']?> </b></p>
+					</div>
+					</div>
+				<?php }?>
 				<!-- ////////////////////////  DATA  ////////////////////////////////// -->
 			</div>
 		</div>

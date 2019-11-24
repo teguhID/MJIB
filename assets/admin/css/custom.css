@@ -1,0 +1,140 @@
+/* SIDEBAR */
+.sidebar {
+	background-color: #2c3e50;
+	box-shadow: 2px 2px 15px grey;
+}
+
+.navbar {
+	background-color: #34495e;
+}
+
+/* MODAL LOGOUT */
+
+
+/* BUTTON TAMBAH */
+a:hover {
+	color: #FFFFFF;
+}
+
+.buttonAdd {
+	text-decoration: none;
+	border-radius: 4px;
+	background-color: #27ae60;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px;
+	width: 150px;
+	transition: all 0.2s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.buttonAdd span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.2s;
+}
+
+.buttonAdd span:after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f054";
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 900;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.2s;
+}
+
+.buttonAdd:hover span {
+	padding-right: 25px;
+}
+
+.buttonAdd:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+/* BUTTON SUBMIT */
+/* //// Curtain Up  //// */
+.buttonfx {
+	margin-top: 50px;
+	color: #259f6c;
+	/* button text color */
+	background: transparent;
+	border: 1px solid #259f6c;
+	border-radius: 12px;
+	letter-spacing: 0.0625em;
+	padding: 8px 40px;
+	text-transform: uppercase;
+	font: bold 16px 'Bitter', sans-serif;
+	/* use google font */
+	line-height: 2;
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	/* remove underline if using A instead of BUTTON tag */
+	overflow: hidden;
+	transition: all .1s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	background: #259f6c;
+	/* onhover background color */
+	z-index: -1;
+	transform: translate3D(0, -100%, 0);
+	/* move elements above button so they don't appear initially */
+	transition: all .3s;
+}
+
+.buttonfx:before {
+	background: #fafcd6;
+	/* button default background color */
+	z-index: -2;
+	transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+	color: white;
+}
+
+.buttonfx:hover:after {
+	transform: translate3D(0, 0, 0);
+	transition: all .25s;
+}
+
+.curtainup {
+	transform-style: preserve-3d;
+}
+
+.curtainup:before,
+.curtainup:after {
+	transform-origin: center center;
+	transform: scale(1, 0);
+}
+
+
+.curtainup:hover:before,
+.curtainup:hover:after {
+	transform: scale(1);
+	border-radius: 0;
+}

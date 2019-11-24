@@ -14,15 +14,19 @@
 	  <label><strong>Hari</strong></label>
 	  <input type="text" class="form-control" name="hari" value="<?php echo $data['hari'];?>">
 	</div>
-	<div class="form-group">
+	<!-- <div class="form-group">
 		<label><strong>Isi</strong></label>
 		<textarea id="mytextarea" name="isi"><p style="color:grey"><?php echo $data['isi'];?></p></textarea>
+	</div> -->
+	<div class="form-group">
+		<label><strong>Isi</strong></label>
+		<textarea class="form-control" name="isi" rows="6" cols="100"><?php echo $data['isi'];?></textarea>
 	</div>
 	<div class="form-group">
 	  <label><strong>Jam/Waktu</strong></label>
 	  <input type="text" class="form-control" name="jam" value="<?php echo $data['jam'];?>">
 	</div>
-  <div class="form-group">
+	<div class="form-group">
 	  <label><strong>Keterangan</strong></label>
 	  <input type="text" class="form-control" name="keterangan" value="<?php echo $data['keterangan'];?>">
 	</div>

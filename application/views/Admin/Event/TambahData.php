@@ -10,26 +10,28 @@ $deleteImage = 'Admin/delete_image';
 <form action="<?php echo site_url('Admin/EventBuatData');?>" method="post" enctype="multipart/form-data" style="padding:30px">
 	<div class="form-group">
 	  <label><strong>Image</strong></label>
-	  <input type="file" class="form-control" name="image">
+	  <input type="file" class="form-control" name="image"required>
 	</div>
 	<div class="form-group">
 	  <label><strong>Penulis</strong></label>
-	  <input type="text" class="form-control" name="username">
+	  <input type="text" class="form-control" name="username"required>
 	</div>
 	<div class="form-group">
 	  <label><strong>Judul</strong></label>
-	  <input type="text" class="form-control" name="judul">
+	  <input type="text" class="form-control" name="judul"required>
 	</div>
 	<div class="form-group">
 	  <label><strong>Tanggal Pelaksanaan</strong></label>
-	  <input type="date" class="form-control" id="tanggal" name="tanggal" >
+	  <input type="date" class="form-control" id="tanggal" name="tanggal" required>
 	</div>
 	<div class="form-group">
 		<label><strong>Content</strong></label>
-		<textarea id="mytextarea" name="content"><p style="color:grey">Tulis Konten Anda Di Sini</p></textarea>
+		<textarea class="form-control" name="content" rows="6" cols="100" required>Tulis Konten Anda Di Sini</textarea>
 	</div>
 	<input type="text" name="updated_at" value=<?php echo date("Y-m-d");?> hidden>
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<div class="d-flex justify-content-center">
+		<button type="submit" class="buttonfx curtainup">Submit</button>
+	</div>
 </form>
 
 

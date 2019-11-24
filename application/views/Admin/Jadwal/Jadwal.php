@@ -5,9 +5,10 @@
 </ol>
 
 <div class="container">
-<a href="<?php echo site_url('Admin/BuatJadwal')?>" class="btn btn-success" style="margin-right: 10px; margin-bottom:-20px"><i class="fas fa-plus-circle" style="margin-right:8px"></i> Tambah Data</a>
+<!-- <a href="<?php echo site_url('Admin/BuatJadwal')?>" class="btn btn-success" style="margin-right: 10px; margin-bottom:-20px"><i class="fas fa-plus-circle" style="margin-right:8px"></i> Tambah Data</a> -->
   <div class="row justify-content-center">
-    <div class="col-10" style="margin-top:3vw">
+    <div class="col-10" style="margin-top:1vw">
+        <a href="<?php echo site_url('Admin/BuatJadwal')?>" class="buttonAdd"><span>Tambah Data </span></a>
         <table class="table" id="dataTable">
         <thead>
             <tr>

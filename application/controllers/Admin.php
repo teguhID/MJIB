@@ -17,18 +17,18 @@ class Admin extends CI_Controller {
     }
 
 
-    // =================================>>>>== ORGANISASI ==<<<<================================== //
-	public function BiografiMJIB()
+    // =================================>>>>== ABOUT ==<<<<================================== //
+	public function BiografiMJIB()     //  MJIB  //
 	{
         $data['biografiMJIB']= $this->AdminModel->BiografiMJIB()->result_array();
         $this->load->view('Admin/Organisasi/BiografiMJIB', $data);
     }
-    public function EditBiografiMJIB($id)
+    public function EditBiografiMJIB($id)   //  MJIB  //
     {
         $data['biografiMJIB'] = $this->AdminModel->EditBiografiMJIB($id)->result_array();
         $this->load->view('Admin/Organisasi/EditBiografiMJIB', $data);
     }
-    public function UpdateBiografiMJIB($id)
+    public function UpdateBiografiMJIB($id) //  MJIB  //
     {
         $imageName = $this->db->where('id', '1')->get('biografi_mjib')->row()->image;
         $data['biografi'] = $this->input->post('biografi');
@@ -61,17 +61,17 @@ class Admin extends CI_Controller {
     }
 
     //===================================================================================//
-    public function BiografiPimpinanMJIB()
+    public function BiografiPimpinanMJIB()  //  GURU  //
     {
         $data['biografiPimpinanMJIB']= $this->AdminModel->BiografiPimpinanMJIB()->result_array();
         $this->load->view('Admin/Organisasi/BiografiPimpinanMJIB', $data);
     }
-    public function EditBiografiPimpinanMJIB($id)
+    public function EditBiografiPimpinanMJIB($id)   //  GURU  //
     {
         $data['biografiPimpinanMJIB'] = $this->AdminModel->EditBiografiPimpinanMJIB($id)->result_array();
         $this->load->view('Admin/Organisasi/EditBiografiPimpinanMJIB', $data);
     }
-    public function UpdateBiografiPimpinanMJIB($id)
+    public function UpdateBiografiPimpinanMJIB($id) //  GURU  //
     {
         $imageName = $this->db->where('id', '1')->get('biografi_pimpinan_mjib')->row()->image;
         $data['biografi'] = $this->input->post('biografi');
@@ -102,7 +102,7 @@ class Admin extends CI_Controller {
         $this->AdminModel->UpdateBiografiPimpinanMJIB($id, $data);
         return redirect('Admin/BiografiPimpinanMJIB','refresh');
     }
-    // =================================>>>>== ORGANISASI ==<<<<================================== //
+    // =================================>>>>== ABOUT ==<<<<================================== //
 
 
 
@@ -214,23 +214,23 @@ class Admin extends CI_Controller {
      }
      public function EventHalamanEditData($id)
      {
-         $data['SyarahHadistJibril'] = $this->AdminModel->DetailTausiah($id, 'syarah_hadist_jibril')->result_array();
-         $this->load->view('Admin/Tausiah/SyarahHadistJibril/EditData', $data);
+         $data['EventData'] = $this->AdminModel->DetailEvent($id, 'event')->result_array();
+         $this->load->view('Admin/Event/EditData', $data);
      }
      public function EventEditData($id)
      {
-        $this->EditDataTausiah( './assets/admin/img/syarahHadistJibril/', 'syarah_hadist_jibril', $id, 'Admin/DetailSyarahHadistJibril/' );
+        $this->EditDataEvent( './assets/admin/img/event/', 'event', $id, 'Admin/DetailEvent/' );
      }
      public function DetailEvent($id)
      {
-         $data['SyarahHadistJibril'] = $this->AdminModel->DetailTausiah($id, 'syarah_hadist_jibril')->result_array();
-         $this->load->view('Admin/Tausiah/SyarahHadistJibril/DetailData', $data);
+         $data['EventData'] = $this->AdminModel->DetailEvent($id, 'event')->result_array();
+         $this->load->view('Admin/Event/DetailData', $data);
      }
      public function EventHapus($id, $image)
      {
-         unlink('./assets/admin/img/syarahHadistJibril/'. $image);
-         $this->AdminModel->DeleteTausiah($id, 'syarah_hadist_jibril');
-         return redirect('Admin/SyarahHadistJibril', 'refresh');
+         unlink('./assets/admin/img/event/'. $image);
+         $this->AdminModel->DeleteTausiah($id, 'event');
+         return redirect('Admin/Event', 'refresh');
      }
     // =================================>>>>== EVENT ==<<<<================================== //
 
