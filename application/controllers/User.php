@@ -9,7 +9,6 @@ class User extends CI_Controller {
         $this->load->model('LoginModel');
         $this->load->model('AdminModel');
 		$this->load->library('session');
-		$this->load->library('pagination');
 	}
 	
 	public function index()

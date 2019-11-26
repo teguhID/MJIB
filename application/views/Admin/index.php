@@ -1,78 +1,110 @@
 <?php include("Layout\Header.php");?>
 <!-- /.container-fluid -->
-      
 
-        <!-- Breadcrumbs-->
-        <ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
-          <li class="breadcrumb-item active"><Strong>Dashboard</Strong></li>
-        </ol>
+        <div class="row" style="padding: 30px">
 
-        <!-- Icon Cards-->
-        <div class="row">
-          <div class="col-xl-2 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
+          <!-- Icon Cards Jadwal Hari Ini-->
+          <div class="col-xl-12 col-sm-6 mb-3">
+            <div class="card text-dark o-hidden h-100" style="box-shadow: 2px 2px 10px grey; background-color:#fdcb6e">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-comments"></i>
+                  <i class="fas fa-exclamation-triangle"></i>
                 </div>
-                <div class="mr-5">26 New Messages!</div>
+                <div class="mr-5">
+                  <h4 style="margin-left:40px"><strong>Event Hari Ini</strong></h4>
+                  <hr/>
+                    <h5 style="margin-left:40px">
+                      <i class="fas fa-exclamation" style="margin-right:10px"></i>
+                      <?php 
+                        if (empty($eventTodayData)) {
+                          echo 'Tidak Ada Event';
+                        }
+                        else{
+                          foreach ($eventTodayData as $data) {
+                              echo $data['judul'];
+                          }
+                        }
+                      ?>
+                    </h5>
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-dark clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
+                <span class="float-left"><strong>View Details</strong></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-2 col-sm-6 mb-3">
-            <div class="card text-white bg-warning o-hidden h-100">
+
+          <!-- Icon Cards Jadwal Terdekat-->
+          <div class="col-xl-8 col-sm-6 mb-3">
+            <div class="card text-dark bg-light o-hidden h-100" style="box-shadow: 2px 2px 10px grey;">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-list"></i>
+                  <i class="far fa-calendar"></i>
                 </div>
-                <div class="mr-5">11 New Tasks!</div>
+                <div class="mr-5">
+                  <h4><strong>Event Terdekat</strong></h4>
+                  <hr/>
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Jadwal</th>
+                        <th>Tanggal</th>
+                      </tr>
+                    </thead>
+                    <?php $no = 1;?>
+                    <?php foreach ($eventData as $data) { ?>
+                    <tbody>
+                      <tr>
+                        <th><?php echo $no++; ?></th>
+                        <td><?php echo $data['judul']?></td>
+                        <td><?php echo date_format(date_create($data['tanggal']),"d F Y");?></td>
+                      </tr>
+                    </tbody>
+                    <?php }?>
+                  </table>
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-dark clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
+                <span class="float-left"><strong>View Details</strong></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-2 col-sm-6 mb-3">
-            <div class="card text-white bg-success o-hidden h-100">
+          
+          <!-- Icon Cards Tausiah-->
+          <div class="col-xl-4 col-sm-6 mb-3">
+            <div class="card text-dark bg-light o-hidden h-100" style="box-shadow: 2px 2px 10px grey;">
               <div class="card-body">
                 <div class="card-body-icon">
-                  <i class="fas fa-fw fa-shopping-cart"></i>
+                  <i class="fas fa-book-reader"></i>
                 </div>
-                <div class="mr-5">123 New Orders!</div>
+                <div class="mr-5">
+                  <h4><strong>Tausiah</strong></h4>
+                  <hr/>
+                    <h6>Bidayatul Hidayah : <?php echo $tausiahBidayatulHidayah?></h6>
+                    <h6>Aqidatul Awam : <?php echo $tausiahAqidatulAwam?></h6>
+                    <h6>Nashohih Diniyah : <?php echo $tausiahNashohihDiniyah?></h6>
+                    <h6>Ihya Ulumuddin : <?php echo $tausiahIhyaUlumuddin?></h6>
+                    <h6>Riyadhus Shalihin : <?php echo $tausiahRiyadhusShalihin?></h6>
+                    <h6>Syarah Ratibul Haddad : <?php echo $tausiahSyarahRatibulHaddad?></h6>
+                    <h6>Syarah Hadits Jibril : <?php echo $tausiahSyarahHaditsJibril?></h6>
+                </div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
-                <span class="float-left">View Details</span>
+              <a class="card-footer text-dark clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
+                <span class="float-left"><strong>View Details</strong></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div class="col-xl-2 col-sm-6 mb-3">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div class="card-body-icon">
-                  <i class="fas fa-fw fa-life-ring"></i>
-                </div>
-                <div class="mr-5">13 New Tickets!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="<?php echo base_url('assets/admin/')?>#">
-                <span class="float-left">View Details</span>
-                <span class="float-right">
-                  <i class="fas fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
+
         </div>
 
 <?php include("Layout\Footer.php");?>

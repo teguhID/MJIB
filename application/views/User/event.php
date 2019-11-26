@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <!-- Latest Posts -->
-                <main class="posts-listing col-lg-8">
+                <main class="col-lg-8">
                     <div class="container">
                         <div class="row">
 
@@ -49,6 +49,7 @@
                                         </a>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
                             </div>
                         <?php } ?>
@@ -62,10 +63,8 @@
                             else  
                                 $page=1; //kalo ga ada, maka page itu di set jadi 1
                         ?>
-
-                        <!-- Pagination -->
-                        <div id="pagination-container"></div>
-                    </div>
+                    </div>                   
+                    <div id="pagination-container" style="margin-top: 40px"></div><!-- Pagination -->
                 </main>
                 <aside class="col-lg-4">
                     <!-- Widget [Search Bar Widget]-->

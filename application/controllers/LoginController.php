@@ -10,7 +10,6 @@ class LoginController extends CI_Controller {
 		$this->load->model('LoginModel');
 		$this->load->library('session');
 	}
-	
 
 	public function index()
 	{
@@ -24,6 +23,13 @@ class LoginController extends CI_Controller {
 			$password = $this->input->post('password');
 			$query = $this->LoginModel->Login($username, $password);
 			if ($query->num_rows() > 0) {
+
+				$dataSession = array(
+					'user' => $this->input->post('username'),
+					'pass' => $this->input->post('password')
+				);
+				$this->session->set_userdata( $dataSession );
+				
 				echo "<script>alert('Login Berhasil');</script>";
 				redirect('Admin/index');
 			} else {

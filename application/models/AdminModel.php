@@ -3,6 +3,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class AdminModel extends CI_Model {
 
+    // =================================>>>>== DASHBOARD ==<<<<================================== //
+    public function EventTerdekatDashboard()
+    {   
+        $date = date("Y-m-d");
+        return $this->db->order_by('tanggal', 'ASC')->where('tanggal >', $date)->get('event', 5);
+    }
+    public function EventTodayDashboard()
+    {   
+        $date = date("Y-m-d");
+        return $this->db->where('tanggal', $date)->get('event');
+    }
+    public function TausiahDashboard($kitab)
+    {   
+        return $this->db->where('kitab',$kitab)->get('tausiah');
+    }
+    // =================================>>>>== DASHBOARD ==<<<<================================== //
+
     // =================================>>>>== ORGANISASI ==<<<<================================== //
     public function BiografiMJIB()
     {

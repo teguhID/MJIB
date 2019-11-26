@@ -1,21 +1,44 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Admin extends CI_Controller {
-
-	
 	public function __construct()
 	{
 		parent::__construct();
         $this->load->model('LoginModel');
         $this->load->model('AdminModel');
         $this->load->library('session');
-	}
+        if(!$this->is_logged_in()){
+          redirect('User/login');
+        }
+    }
+    
+    // Session Login Admin
+    public function is_logged_in() {
+        $user = $this->session->userdata('user');
+        if (!isset($user)) { 
+            return false; 
+        } 
+        else { 
+            return true;
+        }
+    } 
+    // Session Login Admin
+
+    // =================================>>>>== DASHBOARD ==<<<<================================== //
     public function index()
     {
-        $this->load->view('Admin/index');
+        $data['eventData'] = $this->AdminModel->EventTerdekatDashboard()->result_array();
+        $data['eventTodayData'] = $this->AdminModel->EventTodayDashboard()->result_array();
+        $data['tausiahBidayatulHidayah'] = $this->AdminModel->TausiahDashboard('Bidayatul Hidayah')->num_rows();
+        $data['tausiahAqidatulAwam'] = $this->AdminModel->TausiahDashboard('Aqidatul Awam')->num_rows();
+        $data['tausiahNashohihDiniyah'] = $this->AdminModel->TausiahDashboard('Nashohih Diniyah')->num_rows();
+        $data['tausiahIhyaUlumuddin'] = $this->AdminModel->TausiahDashboard('Ihya Ulumuddin')->num_rows();
+        $data['tausiahRiyadhusShalihin'] = $this->AdminModel->TausiahDashboard('Riyadhus Shalihin')->num_rows();
+        $data['tausiahSyarahRatibulHaddad'] = $this->AdminModel->TausiahDashboard('Syarah Ratibul Haddad')->num_rows();
+        $data['tausiahSyarahHaditsJibril'] = $this->AdminModel->TausiahDashboard('Syarah Hadits Jibril')->num_rows();
+        $this->load->view('Admin/index', $data);
     }
-
+    // =================================>>>>== DASHBOARD ==<<<<================================== //
 
     // =================================>>>>== ABOUT ==<<<<================================== //
 	public function BiografiMJIB()     //  MJIB  //
