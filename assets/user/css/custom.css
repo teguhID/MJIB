@@ -359,3 +359,15 @@ i.ytb.fab.fa-youtube-square {
 section.gallery {
 	margin-bottom: 350px;
 }
+
+section.audio {
+	margin-bottom: 350px;
+}
+
+/* Audio */
+.audio-list p {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-family: 'Poppins', sans-serif;
+	color: #3e8559;
+}
