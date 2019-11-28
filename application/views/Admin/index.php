@@ -11,7 +11,7 @@
                   <i class="fas fa-exclamation-triangle"></i>
                 </div>
                 <div class="mr-5">
-                  <h4 style="margin-left:40px"><strong>Event Hari Ini</strong></h4>
+                  <h4 style="margin-left:40px"><strong>Event Hari Ini </strong></h4>
                   <hr/>
                     <h5 style="margin-left:40px">
                       <i class="fas fa-exclamation" style="margin-right:10px"></i>
@@ -106,5 +106,17 @@
           </div>
 
         </div>
+
+        <script>
+          $(document).ready(function () {
+            $("#dashboard").addClass("active")
+            $("#about").removeClass("active")
+            $("#tausiah").removeClass("active")
+            $("#jadwal").removeClass("active")
+            $("#media").removeClass("active")
+            $("#event").removeClass("active")
+            $("#dokumentasi").removeClass("active")
+          });
+        </script>            
 
 <?php include("Layout\Footer.php");?>

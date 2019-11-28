@@ -32,4 +32,16 @@
 
 <?php endforeach; ?>
 
+        <script>
+          $(document).ready(function () {
+            $("#dashboard").removeClass("active")
+            $("#about").removeClass("active")
+            $("#tausiah").addClass("active")
+            $("#jadwal").removeClass("active")
+            $("#media").removeClass("active")
+            $("#event").removeClass("active")
+            $("#dokumentasi").removeClass("active")
+          });
+        </script> 
+
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>

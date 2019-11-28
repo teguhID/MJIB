@@ -56,13 +56,13 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item" id="dashboard">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/">
           <i class="fas fa-home"></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="about">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-sitemap"></i>
           <span>About</span>
@@ -72,31 +72,31 @@
           <a class="dropdown-item" href="<?php echo site_url('')?>/Admin/BiografiPimpinanMJIB" style="font-size: 14px;">Guru</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="tausiah">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Tausiah">
           <i class="fas fa-book-reader"></i>
           <span>Tausiah</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="jadwal">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Jadwal">
           <i class="far fa-list-alt"></i>
           <span>Jadwal</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="media">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Media">
           <i class="fas fa-users"></i>
           <span>Media</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="event">
         <a class="nav-link" href="<?php echo site_url('')?>/Admin/Event">
           <i class="fas fa-calendar-alt"></i>
           <span>Event</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="dokumentasi">
         <a class="nav-link dropdown-toggle" href="<?php echo base_url('assets/admin/')?>#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-camera-retro"></i>
           <span>Dokumentasi</span>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2019 at 05:26 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: Nov 28, 2019 at 03:35 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,35 +25,13 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bidayatul_hidayah`
---
-
-CREATE TABLE `bidayatul_hidayah` (
-  `id` int(10) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
-  `image` varchar(255) DEFAULT NULL,
-  `updated_at` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `bidayatul_hidayah`
---
-
-INSERT INTO `bidayatul_hidayah` (`id`, `username`, `judul`, `content`, `image`, `updated_at`) VALUES
-(11, 'teguhID', 'BIdayatul Hidayah 1', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id volutpat urna, quis dignissim massa. Suspendisse sagittis nunc magna, nec tempus massa imperdiet iaculis. Proin placerat auctor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in luctus neque. Integer consequat nulla sem, eget vehicula quam tempor blandit. Vivamus ornare venenatis felis. Nullam scelerisque quam sit amet ullamcorper tincidunt. Donec euismod vitae purus a ultricies. Nunc rhoncus blandit fringilla. Nunc sit amet nibh enim. Morbi in iaculis urna. Donec cursus mauris in libero semper fringilla. Etiam rhoncus a ligula id ornare. Vestibulum non tristique lacus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Phasellus sagittis sem urna, in tempus lectus elementum sit amet. Quisque scelerisque lacus sit amet odio vestibulum pellentesque. Integer pulvinar aliquam sem consectetur iaculis. Vivamus nisi nulla, gravida non dui ac, venenatis tempor dolor. Nullam molestie dictum ligula, vel viverra felis suscipit vitae. Aenean nunc sem, tempor eu maximus a, elementum et ligula. Fusce nunc eros, vulputate non rhoncus vel, convallis in magna. Proin iaculis aliquet rutrum. Pellentesque porta justo nisi, eget semper sapien dignissim non. Nunc velit leo, efficitur ac felis vel, luctus semper magna. Phasellus sodales diam ac volutpat venenatis. Integer egestas sollicitudin elit, eget sagittis nisi semper ut.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Quisque non pulvinar leo. Aenean neque eros, sagittis nec orci nec, iaculis hendrerit mauris. Pellentesque scelerisque faucibus est, a placerat ipsum cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus urna nibh, tristique et molestie id, rutrum vel velit. Nam eu pretium ipsum, et venenatis mauris. Nunc vel lacus sit amet sem ultricies varius sit amet nec felis. Phasellus placerat tincidunt ex, at semper nulla aliquam ac. Suspendisse potenti. In urna lectus, tincidunt eget augue et, vestibulum tempor ligula. Donec posuere ante non lectus facilisis, sit amet malesuada nibh vehicula. Morbi quis feugiat risus. Phasellus ullamcorper sapien urna, in porttitor risus iaculis ac. Donec bibendum accumsan tellus et imperdiet. Ut eget lacus non ex pulvinar iaculis. Fusce lacinia nisi sit amet tellus accumsan maximus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Fusce ullamcorper nunc sed metus ullamcorper sollicitudin. Sed at felis posuere, ultrices mi sed, tristique neque. Vestibulum suscipit mi eu lorem sodales imperdiet. Donec ipsum sem, luctus bibendum risus a, viverra volutpat ante. Donec tincidunt massa in lorem mattis rhoncus. Morbi tempor dictum egestas. Aenean tristique, mauris ultrices vestibulum aliquam, ipsum ipsum accumsan dui, ac commodo ipsum nisi scelerisque metus. Morbi ante nibh, iaculis sit amet est et, dictum pretium purus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Aliquam sit amet nisl non sapien luctus commodo eu non mi. Aliquam lacinia vulputate lacus, sit amet interdum tellus volutpat nec. Integer vitae volutpat est. Donec ac urna arcu. Maecenas cursus eget lorem ornare tempor. Duis augue sapien, sollicitudin at pulvinar non, rhoncus vel nisl. Ut suscipit sodales nisl, sit amet viverra libero semper vel. Nulla elit diam, dapibus vel molestie ut, consequat quis ex. Mauris faucibus urna ac massa gravida consectetur. Ut nec urna mi. Etiam ac sapien condimentum, congue magna vel, sagittis urna. Donec commodo feugiat nibh quis malesuada. Donec ornare nisi lacus, ut accumsan mauris feugiat at. Nunc in lacus vitae tellus eleifend condimentum. Donec aliquet nisi nec nulla placerat dictum. Morbi id maximus orci.</p>', '201019111459download.png', '2019-10-21');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `biografi_mjib`
 --
 
 CREATE TABLE `biografi_mjib` (
   `id` int(11) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
-  `biografi` longtext,
+  `biografi` longtext DEFAULT NULL,
   `judul` varchar(255) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
   `updated_at` varchar(255) DEFAULT NULL
@@ -75,7 +53,7 @@ INSERT INTO `biografi_mjib` (`id`, `image`, `biografi`, `judul`, `username`, `up
 CREATE TABLE `biografi_pimpinan_mjib` (
   `id` int(11) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
-  `biografi` longtext,
+  `biografi` longtext DEFAULT NULL,
   `judul` varchar(255) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
   `updated_at` varchar(255) DEFAULT NULL
@@ -86,116 +64,91 @@ CREATE TABLE `biografi_pimpinan_mjib` (
 --
 
 INSERT INTO `biografi_pimpinan_mjib` (`id`, `image`, `biografi`, `judul`, `username`, `updated_at`) VALUES
-(1, '061019034833test.jpg', '<p><span style=\"font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;\">\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\"</span></p>', 'Biografi Pimpinan MJIB', 'TeguhID', '2019-10-06');
+(1, '061019034833test.jpg', '<p><span style=\"font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; text-align: justify; background-color: #ffffff;\">\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\"</span></p>', 'Biografi Pimpinan MJIB', 'TeguhID', '2019-11-24');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ihya_ulumuddin`
+-- Table structure for table `event`
 --
 
-CREATE TABLE `ihya_ulumuddin` (
+CREATE TABLE `event` (
   `id` int(10) NOT NULL,
   `username` varchar(255) DEFAULT NULL,
   `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
+  `content` longtext DEFAULT NULL,
+  `tanggal` varchar(255) DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   `updated_at` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ihya_ulumuddin`
+-- Dumping data for table `event`
 --
 
-INSERT INTO `ihya_ulumuddin` (`id`, `username`, `judul`, `content`, `image`, `updated_at`) VALUES
-(11, 'teguhID', 'Kitab Ihya Ulumuddin 1', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id volutpat urna, quis dignissim massa. Suspendisse sagittis nunc magna, nec tempus massa imperdiet iaculis. Proin placerat auctor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in luctus neque. Integer consequat nulla sem, eget vehicula quam tempor blandit. Vivamus ornare venenatis felis. Nullam scelerisque quam sit amet ullamcorper tincidunt. Donec euismod vitae purus a ultricies. Nunc rhoncus blandit fringilla. Nunc sit amet nibh enim. Morbi in iaculis urna. Donec cursus mauris in libero semper fringilla. Etiam rhoncus a ligula id ornare. Vestibulum non tristique lacus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Phasellus sagittis sem urna, in tempus lectus elementum sit amet. Quisque scelerisque lacus sit amet odio vestibulum pellentesque. Integer pulvinar aliquam sem consectetur iaculis. Vivamus nisi nulla, gravida non dui ac, venenatis tempor dolor. Nullam molestie dictum ligula, vel viverra felis suscipit vitae. Aenean nunc sem, tempor eu maximus a, elementum et ligula. Fusce nunc eros, vulputate non rhoncus vel, convallis in magna. Proin iaculis aliquet rutrum. Pellentesque porta justo nisi, eget semper sapien dignissim non. Nunc velit leo, efficitur ac felis vel, luctus semper magna. Phasellus sodales diam ac volutpat venenatis. Integer egestas sollicitudin elit, eget sagittis nisi semper ut.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Quisque non pulvinar leo. Aenean neque eros, sagittis nec orci nec, iaculis hendrerit mauris. Pellentesque scelerisque faucibus est, a placerat ipsum cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus urna nibh, tristique et molestie id, rutrum vel velit. Nam eu pretium ipsum, et venenatis mauris. Nunc vel lacus sit amet sem ultricies varius sit amet nec felis. Phasellus placerat tincidunt ex, at semper nulla aliquam ac. Suspendisse potenti. In urna lectus, tincidunt eget augue et, vestibulum tempor ligula. Donec posuere ante non lectus facilisis, sit amet malesuada nibh vehicula. Morbi quis feugiat risus. Phasellus ullamcorper sapien urna, in porttitor risus iaculis ac. Donec bibendum accumsan tellus et imperdiet. Ut eget lacus non ex pulvinar iaculis. Fusce lacinia nisi sit amet tellus accumsan maximus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Fusce ullamcorper nunc sed metus ullamcorper sollicitudin. Sed at felis posuere, ultrices mi sed, tristique neque. Vestibulum suscipit mi eu lorem sodales imperdiet. Donec ipsum sem, luctus bibendum risus a, viverra volutpat ante. Donec tincidunt massa in lorem mattis rhoncus. Morbi tempor dictum egestas. Aenean tristique, mauris ultrices vestibulum aliquam, ipsum ipsum accumsan dui, ac commodo ipsum nisi scelerisque metus. Morbi ante nibh, iaculis sit amet est et, dictum pretium purus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Aliquam sit amet nisl non sapien luctus commodo eu non mi. Aliquam lacinia vulputate lacus, sit amet interdum tellus volutpat nec. Integer vitae volutpat est. Donec ac urna arcu. Maecenas cursus eget lorem ornare tempor. Duis augue sapien, sollicitudin at pulvinar non, rhoncus vel nisl. Ut suscipit sodales nisl, sit amet viverra libero semper vel. Nulla elit diam, dapibus vel molestie ut, consequat quis ex. Mauris faucibus urna ac massa gravida consectetur. Ut nec urna mi. Etiam ac sapien condimentum, congue magna vel, sagittis urna. Donec commodo feugiat nibh quis malesuada. Donec ornare nisi lacus, ut accumsan mauris feugiat at. Nunc in lacus vitae tellus eleifend condimentum. Donec aliquet nisi nec nulla placerat dictum. Morbi id maximus orci.</p>', '211019011645download.png', '2019-10-21'),
-(12, 'teguhID', 'Kitab Ihya Ulumuddin 2', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id volutpat urna, quis dignissim massa. Suspendisse sagittis nunc magna, nec tempus massa imperdiet iaculis. Proin placerat auctor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in luctus neque. Integer consequat nulla sem, eget vehicula quam tempor blandit. Vivamus ornare venenatis felis. Nullam scelerisque quam sit amet ullamcorper tincidunt. Donec euismod vitae purus a ultricies. Nunc rhoncus blandit fringilla. Nunc sit amet nibh enim. Morbi in iaculis urna. Donec cursus mauris in libero semper fringilla. Etiam rhoncus a ligula id ornare. Vestibulum non tristique lacus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Phasellus sagittis sem urna, in tempus lectus elementum sit amet. Quisque scelerisque lacus sit amet odio vestibulum pellentesque. Integer pulvinar aliquam sem consectetur iaculis. Vivamus nisi nulla, gravida non dui ac, venenatis tempor dolor. Nullam molestie dictum ligula, vel viverra felis suscipit vitae. Aenean nunc sem, tempor eu maximus a, elementum et ligula. Fusce nunc eros, vulputate non rhoncus vel, convallis in magna. Proin iaculis aliquet rutrum. Pellentesque porta justo nisi, eget semper sapien dignissim non. Nunc velit leo, efficitur ac felis vel, luctus semper magna. Phasellus sodales diam ac volutpat venenatis. Integer egestas sollicitudin elit, eget sagittis nisi semper ut.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Quisque non pulvinar leo. Aenean neque eros, sagittis nec orci nec, iaculis hendrerit mauris. Pellentesque scelerisque faucibus est, a placerat ipsum cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus urna nibh, tristique et molestie id, rutrum vel velit. Nam eu pretium ipsum, et venenatis mauris. Nunc vel lacus sit amet sem ultricies varius sit amet nec felis. Phasellus placerat tincidunt ex, at semper nulla aliquam ac. Suspendisse potenti. In urna lectus, tincidunt eget augue et, vestibulum tempor ligula. Donec posuere ante non lectus facilisis, sit amet malesuada nibh vehicula. Morbi quis feugiat risus. Phasellus ullamcorper sapien urna, in porttitor risus iaculis ac. Donec bibendum accumsan tellus et imperdiet. Ut eget lacus non ex pulvinar iaculis. Fusce lacinia nisi sit amet tellus accumsan maximus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Fusce ullamcorper nunc sed metus ullamcorper sollicitudin. Sed at felis posuere, ultrices mi sed, tristique neque. Vestibulum suscipit mi eu lorem sodales imperdiet. Donec ipsum sem, luctus bibendum risus a, viverra volutpat ante. Donec tincidunt massa in lorem mattis rhoncus. Morbi tempor dictum egestas. Aenean tristique, mauris ultrices vestibulum aliquam, ipsum ipsum accumsan dui, ac commodo ipsum nisi scelerisque metus. Morbi ante nibh, iaculis sit amet est et, dictum pretium purus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Aliquam sit amet nisl non sapien luctus commodo eu non mi. Aliquam lacinia vulputate lacus, sit amet interdum tellus volutpat nec. Integer vitae volutpat est. Donec ac urna arcu. Maecenas cursus eget lorem ornare tempor. Duis augue sapien, sollicitudin at pulvinar non, rhoncus vel nisl. Ut suscipit sodales nisl, sit amet viverra libero semper vel. Nulla elit diam, dapibus vel molestie ut, consequat quis ex. Mauris faucibus urna ac massa gravida consectetur. Ut nec urna mi. Etiam ac sapien condimentum, congue magna vel, sagittis urna. Donec commodo feugiat nibh quis malesuada. Donec ornare nisi lacus, ut accumsan mauris feugiat at. Nunc in lacus vitae tellus eleifend condimentum. Donec aliquet nisi nec nulla placerat dictum. Morbi id maximus orci.</p>', '211019011702download.png', '2019-10-21'),
-(13, 'asd', 'Kitab Ihya Ulumuddin 3', '<p style=\"color: grey;\">asd</p>', '211019011713download.png', '2019-10-21');
+INSERT INTO `event` (`id`, `username`, `judul`, `content`, `tanggal`, `image`, `updated_at`) VALUES
+(21, 'Admin', 'EVENT 2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-26', '241119112249test.png', '2019-11-26'),
+(22, 'Admin', 'EVENT 1', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-28', '261119013723test.png', '2019-11-26'),
+(23, 'Admin', 'EVENT 3', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-29', '261119013759test.png', '2019-11-26'),
+(24, 'Admin', 'EVENT 4', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-12-03', '261119013831test.png', '2019-11-26'),
+(25, 'Admin', 'EVENT 5', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-12-11', '261119013852test.png', '2019-11-26'),
+(26, 'Admin', 'EVENT 6', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-02', '261119013957test.png', '2019-11-26'),
+(27, 'Master', 'EVENT 7', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-06', '261119014037test.png', '2019-11-26'),
+(28, 'Master', 'EVENT 8', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-14', '261119014116test.png', '2019-11-26'),
+(29, 'Admin', 'EVENT 8', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-16', '261119014147test.png', '2019-11-26'),
+(30, 'Master', 'EVENT 9 ', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-22', '261119014313test.png', '2019-11-26'),
+(31, 'Admin', 'EVENT 10', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-11-20', '261119014352test.png', '2019-11-26'),
+(32, 'Admin', 'EVENT 12', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2019-12-20', '261119014410test.png', '2019-11-26');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nashoih_diniyah`
+-- Table structure for table `jadwal`
 --
 
-CREATE TABLE `nashoih_diniyah` (
+CREATE TABLE `jadwal` (
+  `id` int(5) NOT NULL,
+  `judul` varchar(255) DEFAULT NULL,
+  `hari` varchar(255) DEFAULT NULL,
+  `isi` longtext DEFAULT NULL,
+  `jam` varchar(255) DEFAULT NULL,
+  `keterangan` varchar(255) DEFAULT NULL,
+  `updated_at` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `jadwal`
+--
+
+INSERT INTO `jadwal` (`id`, `judul`, `hari`, `isi`, `jam`, `keterangan`, `updated_at`) VALUES
+(2, 'Mahad Al Ihsan Ba\'alawy', 'Setiap Hari Rabu (Majelis Burdah)', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has su', 'Pukul 12.00 - 15.00', 'Terbuka Untuk Umum', '2019-11-24'),
+(3, 'dfafasfasfasf', '1111111', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2222', '123123', '2019-11-24');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tausiah`
+--
+
+CREATE TABLE `tausiah` (
   `id` int(10) NOT NULL,
   `username` varchar(255) DEFAULT NULL,
   `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
+  `kitab` varchar(255) DEFAULT NULL,
+  `content` longtext DEFAULT NULL,
   `image` varchar(255) DEFAULT NULL,
   `updated_at` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `nashoih_diniyah`
+-- Dumping data for table `tausiah`
 --
 
-INSERT INTO `nashoih_diniyah` (`id`, `username`, `judul`, `content`, `image`, `updated_at`) VALUES
-(1, 'master', 'Nashoih Diniyah 11', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">asd</p>', '211019034925Untitled.png', '2019-10-21'),
-(2, 'master', 'Nashoih Diniyah 2', '<p style=\"color: grey;\">Tulis Konten Anda Di Sini</p>', '211019015416download.png', '2019-10-21');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `riyadush_sholihin`
---
-
-CREATE TABLE `riyadush_sholihin` (
-  `id` int(10) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
-  `image` varchar(255) DEFAULT NULL,
-  `updated_at` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `riyadush_sholihin`
---
-
-INSERT INTO `riyadush_sholihin` (`id`, `username`, `judul`, `content`, `image`, `updated_at`) VALUES
-(11, 'teguhID', 'Riyadus Sholihin 1', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id volutpat urna, quis dignissim massa. Suspendisse sagittis nunc magna, nec tempus massa imperdiet iaculis. Proin placerat auctor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in luctus neque. Integer consequat nulla sem, eget vehicula quam tempor blandit. Vivamus ornare venenatis felis. Nullam scelerisque quam sit amet ullamcorper tincidunt. Donec euismod vitae purus a ultricies. Nunc rhoncus blandit fringilla. Nunc sit amet nibh enim. Morbi in iaculis urna. Donec cursus mauris in libero semper fringilla. Etiam rhoncus a ligula id ornare. Vestibulum non tristique lacus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Phasellus sagittis sem urna, in tempus lectus elementum sit amet. Quisque scelerisque lacus sit amet odio vestibulum pellentesque. Integer pulvinar aliquam sem consectetur iaculis. Vivamus nisi nulla, gravida non dui ac, venenatis tempor dolor. Nullam molestie dictum ligula, vel viverra felis suscipit vitae. Aenean nunc sem, tempor eu maximus a, elementum et ligula. Fusce nunc eros, vulputate non rhoncus vel, convallis in magna. Proin iaculis aliquet rutrum. Pellentesque porta justo nisi, eget semper sapien dignissim non. Nunc velit leo, efficitur ac felis vel, luctus semper magna. Phasellus sodales diam ac volutpat venenatis. Integer egestas sollicitudin elit, eget sagittis nisi semper ut.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Quisque non pulvinar leo. Aenean neque eros, sagittis nec orci nec, iaculis hendrerit mauris. Pellentesque scelerisque faucibus est, a placerat ipsum cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus urna nibh, tristique et molestie id, rutrum vel velit. Nam eu pretium ipsum, et venenatis mauris. Nunc vel lacus sit amet sem ultricies varius sit amet nec felis. Phasellus placerat tincidunt ex, at semper nulla aliquam ac. Suspendisse potenti. In urna lectus, tincidunt eget augue et, vestibulum tempor ligula. Donec posuere ante non lectus facilisis, sit amet malesuada nibh vehicula. Morbi quis feugiat risus. Phasellus ullamcorper sapien urna, in porttitor risus iaculis ac. Donec bibendum accumsan tellus et imperdiet. Ut eget lacus non ex pulvinar iaculis. Fusce lacinia nisi sit amet tellus accumsan maximus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Fusce ullamcorper nunc sed metus ullamcorper sollicitudin. Sed at felis posuere, ultrices mi sed, tristique neque. Vestibulum suscipit mi eu lorem sodales imperdiet. Donec ipsum sem, luctus bibendum risus a, viverra volutpat ante. Donec tincidunt massa in lorem mattis rhoncus. Morbi tempor dictum egestas. Aenean tristique, mauris ultrices vestibulum aliquam, ipsum ipsum accumsan dui, ac commodo ipsum nisi scelerisque metus. Morbi ante nibh, iaculis sit amet est et, dictum pretium purus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Aliquam sit amet nisl non sapien luctus commodo eu non mi. Aliquam lacinia vulputate lacus, sit amet interdum tellus volutpat nec. Integer vitae volutpat est. Donec ac urna arcu. Maecenas cursus eget lorem ornare tempor. Duis augue sapien, sollicitudin at pulvinar non, rhoncus vel nisl. Ut suscipit sodales nisl, sit amet viverra libero semper vel. Nulla elit diam, dapibus vel molestie ut, consequat quis ex. Mauris faucibus urna ac massa gravida consectetur. Ut nec urna mi. Etiam ac sapien condimentum, congue magna vel, sagittis urna. Donec commodo feugiat nibh quis malesuada. Donec ornare nisi lacus, ut accumsan mauris feugiat at. Nunc in lacus vitae tellus eleifend condimentum. Donec aliquet nisi nec nulla placerat dictum. Morbi id maximus orci.</p>', '211019011928download.png', '2019-10-21'),
-(12, 'teguhID', 'Riyadus Sholihin 2', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id volutpat urna, quis dignissim massa. Suspendisse sagittis nunc magna, nec tempus massa imperdiet iaculis. Proin placerat auctor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in luctus neque. Integer consequat nulla sem, eget vehicula quam tempor blandit. Vivamus ornare venenatis felis. Nullam scelerisque quam sit amet ullamcorper tincidunt. Donec euismod vitae purus a ultricies. Nunc rhoncus blandit fringilla. Nunc sit amet nibh enim. Morbi in iaculis urna. Donec cursus mauris in libero semper fringilla. Etiam rhoncus a ligula id ornare. Vestibulum non tristique lacus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Phasellus sagittis sem urna, in tempus lectus elementum sit amet. Quisque scelerisque lacus sit amet odio vestibulum pellentesque. Integer pulvinar aliquam sem consectetur iaculis. Vivamus nisi nulla, gravida non dui ac, venenatis tempor dolor. Nullam molestie dictum ligula, vel viverra felis suscipit vitae. Aenean nunc sem, tempor eu maximus a, elementum et ligula. Fusce nunc eros, vulputate non rhoncus vel, convallis in magna. Proin iaculis aliquet rutrum. Pellentesque porta justo nisi, eget semper sapien dignissim non. Nunc velit leo, efficitur ac felis vel, luctus semper magna. Phasellus sodales diam ac volutpat venenatis. Integer egestas sollicitudin elit, eget sagittis nisi semper ut.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Quisque non pulvinar leo. Aenean neque eros, sagittis nec orci nec, iaculis hendrerit mauris. Pellentesque scelerisque faucibus est, a placerat ipsum cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus urna nibh, tristique et molestie id, rutrum vel velit. Nam eu pretium ipsum, et venenatis mauris. Nunc vel lacus sit amet sem ultricies varius sit amet nec felis. Phasellus placerat tincidunt ex, at semper nulla aliquam ac. Suspendisse potenti. In urna lectus, tincidunt eget augue et, vestibulum tempor ligula. Donec posuere ante non lectus facilisis, sit amet malesuada nibh vehicula. Morbi quis feugiat risus. Phasellus ullamcorper sapien urna, in porttitor risus iaculis ac. Donec bibendum accumsan tellus et imperdiet. Ut eget lacus non ex pulvinar iaculis. Fusce lacinia nisi sit amet tellus accumsan maximus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Fusce ullamcorper nunc sed metus ullamcorper sollicitudin. Sed at felis posuere, ultrices mi sed, tristique neque. Vestibulum suscipit mi eu lorem sodales imperdiet. Donec ipsum sem, luctus bibendum risus a, viverra volutpat ante. Donec tincidunt massa in lorem mattis rhoncus. Morbi tempor dictum egestas. Aenean tristique, mauris ultrices vestibulum aliquam, ipsum ipsum accumsan dui, ac commodo ipsum nisi scelerisque metus. Morbi ante nibh, iaculis sit amet est et, dictum pretium purus.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Aliquam sit amet nisl non sapien luctus commodo eu non mi. Aliquam lacinia vulputate lacus, sit amet interdum tellus volutpat nec. Integer vitae volutpat est. Donec ac urna arcu. Maecenas cursus eget lorem ornare tempor. Duis augue sapien, sollicitudin at pulvinar non, rhoncus vel nisl. Ut suscipit sodales nisl, sit amet viverra libero semper vel. Nulla elit diam, dapibus vel molestie ut, consequat quis ex. Mauris faucibus urna ac massa gravida consectetur. Ut nec urna mi. Etiam ac sapien condimentum, congue magna vel, sagittis urna. Donec commodo feugiat nibh quis malesuada. Donec ornare nisi lacus, ut accumsan mauris feugiat at. Nunc in lacus vitae tellus eleifend condimentum. Donec aliquet nisi nec nulla placerat dictum. Morbi id maximus orci.</p>', '211019011942download.png', '2019-10-21'),
-(13, 'asd', 'Riyadus Sholihin 3', '<p style=\"color: grey;\">asd</p>', '211019011950download.png', '2019-10-21');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `syarah_hadist_jibril`
---
-
-CREATE TABLE `syarah_hadist_jibril` (
-  `id` int(10) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
-  `image` varchar(255) DEFAULT NULL,
-  `updated_at` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `syarah_hadist_jibril`
---
-
-INSERT INTO `syarah_hadist_jibril` (`id`, `username`, `judul`, `content`, `image`, `updated_at`) VALUES
-(13, 'teguhID', 'Syarah Hadist Jibril 3', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">asd</p>', '211019033449Untitled.png', '2019-10-21'),
-(14, 'master', 'Syarah Hadist Jibril 2', '<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\r\n<p style=\"margin: 0px 0px 15px; padding: 0px; text-align: justify; font-family: \'Open Sans\', Arial, sans-serif; font-size: 14px; background-color: #ffffff;\">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>', '211019023032download.png', '2019-10-21');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `syarah_ratib_alhaddad`
---
-
-CREATE TABLE `syarah_ratib_alhaddad` (
-  `id` int(10) NOT NULL,
-  `username` varchar(255) DEFAULT NULL,
-  `judul` varchar(255) DEFAULT NULL,
-  `content` longtext,
-  `image` varchar(255) DEFAULT NULL,
-  `updated_at` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `tausiah` (`id`, `username`, `judul`, `kitab`, `content`, `image`, `updated_at`) VALUES
+(22, 'asd', 'asd', 'Bidayatul Hidayah', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '181119074408blog-post-1.jpeg', '2019-11-24'),
+(23, 'dfgdfg', 'dfgdfg', 'Syarah Ratibul Haddad', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '181119080125bg3.jpg', '2019-11-24'),
+(24, 'fsdf', 'dsf', 'Syarah Ratibul Haddad', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '181119081342bg2.jpg', '2019-11-24'),
+(25, 'sfgdfgdfgdf', 'klshdfkjsdjgfskjdfhdskjfh', 'Bidayatul Hidayah', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '211119112654download.png', '2019-11-24');
 
 -- --------------------------------------------------------
 
@@ -215,18 +168,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `hak_akses`) VALUES
-(1, 'master', 'master', 'master'),
-(2, 'master', 'a30fc3c39c1083e0216f4e964c81beeb10143f05', 'master');
+(1, 'master', 'master', 'master');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `bidayatul_hidayah`
---
-ALTER TABLE `bidayatul_hidayah`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `biografi_mjib`
@@ -241,33 +187,21 @@ ALTER TABLE `biografi_pimpinan_mjib`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `ihya_ulumuddin`
+-- Indexes for table `event`
 --
-ALTER TABLE `ihya_ulumuddin`
+ALTER TABLE `event`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `nashoih_diniyah`
+-- Indexes for table `jadwal`
 --
-ALTER TABLE `nashoih_diniyah`
+ALTER TABLE `jadwal`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `riyadush_sholihin`
+-- Indexes for table `tausiah`
 --
-ALTER TABLE `riyadush_sholihin`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `syarah_hadist_jibril`
---
-ALTER TABLE `syarah_hadist_jibril`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `syarah_ratib_alhaddad`
---
-ALTER TABLE `syarah_ratib_alhaddad`
+ALTER TABLE `tausiah`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -279,12 +213,6 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `bidayatul_hidayah`
---
-ALTER TABLE `bidayatul_hidayah`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `biografi_mjib`
@@ -299,34 +227,22 @@ ALTER TABLE `biografi_pimpinan_mjib`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `ihya_ulumuddin`
+-- AUTO_INCREMENT for table `event`
 --
-ALTER TABLE `ihya_ulumuddin`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+ALTER TABLE `event`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT for table `nashoih_diniyah`
+-- AUTO_INCREMENT for table `jadwal`
 --
-ALTER TABLE `nashoih_diniyah`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `jadwal`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `riyadush_sholihin`
+-- AUTO_INCREMENT for table `tausiah`
 --
-ALTER TABLE `riyadush_sholihin`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
---
--- AUTO_INCREMENT for table `syarah_hadist_jibril`
---
-ALTER TABLE `syarah_hadist_jibril`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `syarah_ratib_alhaddad`
---
-ALTER TABLE `syarah_ratib_alhaddad`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tausiah`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `users`

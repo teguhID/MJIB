@@ -12,8 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link rel="icon" href="images/logo/baalawy.png" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="Home Loan Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -68,9 +67,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<img src="<?php echo base_url('assets/user/')?>images/logo/baalawy-brand.png" alt="">
 					</a>
 				</h1>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -82,9 +79,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							</a>
 						</li>
 						<li class="nav-item dropdown mr-3">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								About
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> About
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="typography.html">MJIB</a>
@@ -115,52 +110,51 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 	<!-- login -->
 
-		<div class="page login-page">
-			<div class="container d-flex align-items-center">
-				<div class="form-holder has-shadow">
-					<div class="row">
-						<!-- Logo & Information Panel-->
-						<div class="col-lg-6">
-							<div class="info d-flex align-items-center">
-								<div class="content">
-									<div class="logo">
-										<img src="<?php echo base_url('assets/user/')?>images/logo/baalawy-brand2.png" alt="">
-									</div>
-
-									<p class="txttitle">&nbsp;&nbsp; Majelis Jalsatul Itsnain Ba'alawy</p>
+	<div class="page login-page">
+		<div class="container d-flex align-items-center">
+			<div class="form-holder has-shadow">
+				<div class="row">
+					<!-- Logo & Information Panel-->
+					<div class="col-lg-6">
+						<div class="info d-flex align-items-center">
+							<div class="content">
+								<div class="logo">
+									<img src="<?php echo base_url('assets/user/')?>images/logo/baalawy-brand2.png" alt="">
 								</div>
-							</div>
-						</div>
-
-						<!-- Form Panel    -->
-						<div class="col-lg-6 bg-white">
-							<div class="form d-flex align-items-center">
-								<form action="<?php echo site_url('LoginController/Login')?>" method="POST">
-									<div class="form-group">
-										<input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material" placeholder="Username" style="padding:10px">
-									</div>
-									<div class="form-group">
-										<input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material" placeholder="Password" style="padding:10px">
-									</div>
-									<div class="row justify-content-center">
-										<button type="submit" class="btn btn-primary col-4" name="login">Login</button>
-									</div>
-								</form>
+								<p class="txttitle">&nbsp;&nbsp; Majelis Jalsatul Itsnain Ba'alawy</p>
 							</div>
 						</div>
 					</div>
+
+					<!-- Form Panel    -->
+					<div class="col-lg-6 bg-white">
+						<div class="form d-flex align-items-center">
+							<form action="<?php echo site_url('LoginController/Login')?>" method="POST">
+								<div class="form-group">
+									<input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material" placeholder="Username" style="padding:10px">
+								</div>
+								<div class="form-group">
+									<input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material" placeholder="Password" style="padding:10px">
+								</div>
+								<div class="row justify-content-center">
+									<button type="submit" class="btn btn-primary col-4" name="login">Login</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
+			</div>
 
 
-	<!--end login-->
+			<!--end login-->
 
-	<!-- js-->
-	<script src="<?php echo base_url('assets/user/')?>js/jquery-2.2.3.min.js"></script>
-	<!-- js-->
-	<!-- Bootstrap Core JavaScript -->
-	<script src="<?php echo base_url('assets/user/')?>js/bootstrap.js ">
-	</script>
-	<!-- //Bootstrap Core JavaScript -->
+			<!-- js-->
+			<script src="<?php echo base_url('assets/user/')?>js/jquery-2.2.3.min.js"></script>
+			<!-- js-->
+			<!-- Bootstrap Core JavaScript -->
+			<script src="<?php echo base_url('assets/user/')?>js/bootstrap.js ">
+			</script>
+			<!-- //Bootstrap Core JavaScript -->
 </body>
 
 </html>

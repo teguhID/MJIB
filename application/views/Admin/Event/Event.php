@@ -37,4 +37,16 @@
   </div>
 </div>
 
+<script>
+	$(document).ready(function () {
+		$("#dashboard").removeClass("active")
+		$("#about").removeClass("active")
+		$("#tausiah").removeClass("active")
+		$("#jadwal").removeClass("active")
+		$("#media").removeClass("active")
+		$("#event").addClass("active")
+		$("#dokumentasi").removeClass("active")
+	});
+</script>
+
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>

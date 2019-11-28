@@ -4,25 +4,26 @@ $deleteImage = 'Admin/delete_image';
 ?>
 
 <ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
-    <li class="breadcrumb-item active"><Strong>Tambah Event</Strong></li>
+	<li class="breadcrumb-item active"><Strong>Tambah Event</Strong></li>
 </ol>
 
-<form action="<?php echo site_url('Admin/EventBuatData');?>" method="post" enctype="multipart/form-data" style="padding:30px">
+<form action="<?php echo site_url('Admin/EventBuatData');?>" method="post" enctype="multipart/form-data"
+	style="padding:30px">
 	<div class="form-group">
-	  <label><strong>Image</strong></label>
-	  <input type="file" class="form-control" name="image"required>
+		<label><strong>Image</strong></label>
+		<input type="file" class="form-control" name="image" required>
 	</div>
 	<div class="form-group">
-	  <label><strong>Penulis</strong></label>
-	  <input type="text" class="form-control" name="username"required>
+		<label><strong>Penulis</strong></label>
+		<input type="text" class="form-control" name="username" required>
 	</div>
 	<div class="form-group">
-	  <label><strong>Judul</strong></label>
-	  <input type="text" class="form-control" name="judul"required>
+		<label><strong>Judul</strong></label>
+		<input type="text" class="form-control" name="judul" required>
 	</div>
 	<div class="form-group">
-	  <label><strong>Tanggal Pelaksanaan</strong></label>
-	  <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+		<label><strong>Tanggal Pelaksanaan</strong></label>
+		<input type="date" class="form-control" id="tanggal" name="tanggal" required>
 	</div>
 	<div class="form-group">
 		<label><strong>Content</strong></label>
@@ -34,5 +35,16 @@ $deleteImage = 'Admin/delete_image';
 	</div>
 </form>
 
+<script>
+	$(document).ready(function () {
+		$("#dashboard").removeClass("active")
+		$("#about").removeClass("active")
+		$("#tausiah").removeClass("active")
+		$("#jadwal").removeClass("active")
+		$("#media").removeClass("active")
+		$("#event").addClass("active")
+		$("#dokumentasi").removeClass("active")
+	});
+</script>
 
 <?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
