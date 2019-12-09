@@ -10,6 +10,15 @@
     <div class="row justify-content-center" style="margin-bottom:20px; margin-top:50px">
         <div class="card col-10">
         <i class="fas fa-exclamation-triangle" style="margin:10px; color:red"><strong> preview</strong></i>
+        <?php if ($data['image'] == '') {?>
+            <div class="row justify-content-center">
+                <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
+            </div>
+        <?php } else {?>
+            <div class="row justify-content-center">                     
+                <img src="<?php echo base_url('assets/admin/img/jadwal/' . $data['image'])?>" width="630" height="350"><br>
+            </div>
+        <?php } ?>
             <div class="card-body">
                 <h3 class="card-title"><?php echo $data['judul'];?></h3>
                 <p class="card-text"><?php echo $data['hari'];?></p>

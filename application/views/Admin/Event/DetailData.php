@@ -15,7 +15,7 @@
                 <img src="<?php echo base_url('assets/admin/img/noimage.jpg')?>" width="630" height="350"><br>
             </div>
         <?php } else {?>
-                <div class="row justify-content-center">                     
+            <div class="row justify-content-center">                     
                 <img src="<?php echo base_url('assets/admin/img/event/' . $data['image'])?>" width="630" height="350"><br>
             </div>
         <?php } ?>

@@ -21,9 +21,9 @@
             <?php $no=1; foreach ($JadwalData as $data) {?>
                 <tr> 
                     <th width="10%" class="text-center"><?php echo $no++;?></th>
-                    <td width="70%" class="text-center"><a href="<?php echo site_url('Admin/DetailJadwal/' . $data['id'] . '/' . 'DetailJadwal')?>" style="color:black; text-decoration:none" onmouseover="this.style.color='green';" onmouseout="this.style.color='black';"><?php echo $data['judul']; ?></a></td>
+                    <td width="70%" class="text-center"><a href="<?php echo site_url('Admin/DetailJadwal/' . $data['id'])?>" style="color:black; text-decoration:none" onmouseover="this.style.color='green';" onmouseout="this.style.color='black';"><?php echo $data['judul']; ?></a></td>
                     <td width="20%" class="text-center">
-                        <a href="<?php echo site_url('Admin/Detailjadwal/' . $data['id'] . '/' . 'EditJadwal')?>" class="btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
+                        <a href="<?php echo site_url('Admin/JadwalHalamanEditData/' . $data['id'])?>" class="btn-sm btn-info"><i class="fas fa-pencil-alt"></i></a>
                         <a href="<?php echo '/#'?>" class="btn-sm btn-secondary"><i class="fa fa-globe"></i></a>
                         <a href="<?php echo site_url('Admin/HapusJadwal/'. $data['id'])?>" class="btn-sm btn-danger" onclick="return confirm('Yakin Igin di Hapus ?')"><i class="fas fa-trash"></i></a>
                     </td>

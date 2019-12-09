@@ -7,11 +7,15 @@
 <form action="<?php echo site_url('Admin/PostJadwal');?>" method="post" enctype="multipart/form-data" style="padding:30px">
 	<div class="form-group">
 	  <label><strong>Judul</strong></label>
-	  <input type="text" class="form-control" name="judul">
+	  <input type="text" class="form-control" name="judul" required>
+	</div>
+	<div class="form-group">
+	  <label><strong>Image</strong></label>
+	  <input type="file" class="form-control" name="image" required>
 	</div>
 	<div class="form-group">
 	  <label><strong>Hari</strong></label>
-	  <input type="text" class="form-control" name="hari">
+	  <input type="text" class="form-control" name="hari" required>
 	</div>
 	<div class="form-group">
 		<label><strong>Content</strong></label>
@@ -19,11 +23,11 @@
 	</div>
 	<div class="form-group">
 	  <label><strong>Jam/Waktu</strong></label>
-	  <input type="text" class="form-control" name="jam">
+	  <input type="text" class="form-control" name="jam" required>
 	</div>
 	<div class="form-group">
 	  <label><strong>Keterangan</strong></label>
-	  <input type="text" class="form-control" name="keterangan">
+	  <input type="text" class="form-control" name="keterangan" required>
 	</div>
 	<input type="text" name="updated_at" value=<?php echo date("d-m-Y");?> hidden>
 	<button type="submit" class="btn btn-primary">Submit</button>

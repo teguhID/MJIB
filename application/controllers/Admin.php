@@ -178,32 +178,21 @@ class Admin extends CI_Controller {
     }
     public function PostJadwal()
     {
-        $data['judul'] = $this->input->post('judul');
-        $data['hari'] = $this->input->post('hari');
-        $data['isi'] = $this->input->post('isi');
-        $data['jam'] = $this->input->post('jam');
-        $data['keterangan'] = $this->input->post('keterangan');
-        $data['updated_at'] = $this->input->post('updated_at');
-        $this->AdminModel->CreateTausiah($data, 'jadwal');
-        return redirect('Admin/Jadwal', 'refresh');
+        $this->CreateDataJadwal('./assets/admin/img/jadwal/', 'jadwal', 'Admin/Jadwal');
     }
-    public function Detailjadwal($id, $page)
+    public function JadwalHalamanEditData($id)
+    {
+        $data['JadwalData'] = $this->AdminModel->DetailJadwal($id, 'jadwal')->result_array();
+        $this->load->view('Admin/Jadwal/EditJadwal', $data);
+    }
+    public function Detailjadwal($id)
     {
         $data['JadwalData'] = $this->AdminModel->DetailJadwal($id,'jadwal')->result_array();
-        $this->load->view('Admin/Jadwal/' . $page, $data);
+        $this->load->view('Admin/Jadwal/DetailJadwal', $data);
     }
     public function UpdateJadwal($id)
     {
-        $data['judul'] = $this->input->post('judul');
-        $data['hari'] = $this->input->post('hari');
-        $data['isi'] = $this->input->post('isi');
-        $data['jam'] = $this->input->post('jam');
-        $data['keterangan'] = $this->input->post('keterangan');
-        $data['updated_at'] = $this->input->post('updated_at');
-        $this->AdminModel->UpdateJadwal($id, $data, 'jadwal');
-
-        $data['JadwalData'] = $this->AdminModel->DetailJadwal($id,'jadwal')->result_array();
-        $this->load->view('Admin/Jadwal/DetailJadwal', $data);
+        $this->EditDataJadwal( './assets/admin/img/jadwal/', 'jadwal', $id, 'Admin/Detailjadwal/' );
     }
     public function HapusJadwal($id)
       {
@@ -258,19 +247,111 @@ class Admin extends CI_Controller {
     // =================================>>>>== EVENT ==<<<<================================== //
 
 
-    // DOKUMENTASI
+    // =================================>>>>== DOKUMENTASI ==<<<<================================== //
     public function Foto()
     {
         $this->load->view('Admin/Dokumentasi/Foto');
+    }
+    public function UploadImage()
+    {
+        $countfiles = count($_FILES['image']['name']);
+        for($i=0;$i<$countfiles;$i++){
+            $filename = date("dmyhis") . $i . $_FILES['image']['name'][$i];
+            move_uploaded_file($_FILES['image']['tmp_name'][$i],'./assets/admin/img/dokumentasi/foto/'.$filename);
+            $data['image'] = $filename;
+            $data['tag'] = $this->input->post('tag');
+            $data['updated_at'] = $this->input->post('updated_at');
+            $this->AdminModel->InsertFoto($data, 'foto');
+        }
     }
     public function Video()
     {
         $this->load->view('Admin/Dokumentasi/Video');
     }
+    // =================================>>>>== DOKUMENTASI ==<<<<================================== //
 
 
+// ====================================================== JADWAL ====================================================== // 
+    // $path = directory penyimpanan foto
+    // $tabel = tabel database yang akan di edit
+    // $redirect = redirect function halaman awal
+    public function CreateDataJadwal($path, $tabel, $redirect)
+    {
+        $data['image'] = $this->input->post('image');
+        $data['judul'] = $this->input->post('judul');
+        $data['image'] = $this->input->post('image');
+        $data['hari'] = $this->input->post('hari');
+        $data['isi'] = $this->input->post('isi');
+        $data['jam'] = $this->input->post('jam');
+        $data['keterangan'] = $this->input->post('keterangan');
+        $data['updated_at'] = $this->input->post('updated_at');
 
+        if ($_FILES['image']['size'] == 0) {
+            $data['image'] = $this->input->post('imageVal');
+        } 
+        else {
+            $data['image'] = str_replace(' ', '_', date("dmyhis") . $_FILES['image']['name']);
+            $config['upload_path'] = $path;
+            $config['allowed_types'] = 'jpg|png|gif|jpeg';
+            $config['file_name'] = $data['image'];
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('image'))
+            {
+                    array('error' => $this->upload->display_errors());
+            }
+            else
+            {
+                    array('upload_data' => $this->upload->data());
+            }
+        }
 
+        $this->AdminModel->CreateJadwal($data, $tabel);
+        return redirect($redirect, 'refresh');
+    }
+
+    // $path = directory penyimpanan foto
+    // $tabel = tabel database yang akan di edit
+    // $id = passing id ke model
+    // $redirect = redirect function halaman awal
+     public function EditDataJadwal($path, $tabel, $id, $redirect)
+     {
+        $imageName =  $this->input->post('imageVal');
+        $data['judul'] = $this->input->post('judul');
+        $data['image'] = $this->input->post('image');
+        $data['hari'] = $this->input->post('hari');
+        $data['isi'] = $this->input->post('isi');
+        $data['jam'] = $this->input->post('jam');
+        $data['keterangan'] = $this->input->post('keterangan');
+        $data['updated_at'] = $this->input->post('updated_at');
+
+        if ($_FILES['image']['size'] == 0) {
+            $data['image'] = $imageName;
+        } 
+        else {
+            if ($imageName == null) {
+                
+            }
+            else {
+                unlink($path . $imageName);
+            }
+            $data['image'] = str_replace(' ', '_', date("dmyhis") . $_FILES['image']['name']);
+            $config['upload_path'] = $path;
+            $config['allowed_types'] = 'jpg|png|gif|jpeg';
+            $config['file_name'] = $data['image'];
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload('image'))
+            {
+                    array('error' => $this->upload->display_errors());
+            }
+            else
+            {
+                    array('upload_data' => $this->upload->data());
+            }
+        }
+       $this->AdminModel->UpdateJadwal($id, $data, $tabel);
+        return redirect($redirect . $id, 'refresh');
+     }
+// ====================================================== JADWAL ====================================================== // 
 
 // ============================================ TAUSIAH ========================================//
     // $path = directory penyimpanan foto

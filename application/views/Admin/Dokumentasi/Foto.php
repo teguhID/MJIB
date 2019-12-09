@@ -4,28 +4,18 @@
     <li class="breadcrumb-item active"><Strong>Foto</Strong></li>
 </ol>
 
-<form runat="server">
-  <input type='file' id="imgInp" />
-  <img id="blah" src="#" alt="your image" />
+<form action="<?php echo site_url('Admin/UploadImage');?>" method="post" enctype="multipart/form-data" style="padding:30px">
+	<div class="form-group">
+	  <label><strong>Image</strong></label>
+	  <input type="file" class="form-control" name="image[]" multiple required>
+	</div>
+	<div class="form-group">
+	  <label><strong>Tag</strong></label>
+	  <input type="text" class="form-control" name="tag" required>
+	</div>
+	<input type="text" name="updated_at" value=<?php echo date("d-m-Y");?> hidden>
+	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-<script>
-    function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-        
-        reader.onload = function(e) {
-        $('#blah').attr('src', e.target.result);
-        }
-        
-        reader.readAsDataURL(input.files[0]);
-    }
-    }
-
-    $("#imgInp").change(function() {
-    readURL(this);
-    });
-</script>
 
 <script>
 	$(document).ready(function () {
