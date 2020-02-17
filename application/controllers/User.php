@@ -18,7 +18,7 @@ class User extends CI_Controller {
 	}
 	public function Guru()
 	{
-		$this->load->view('User/About');
+		$this->load->view('User/about');
 	}
 	public function Tausiah()
 	{
@@ -37,7 +37,7 @@ class User extends CI_Controller {
 	}
 	public function Media()
 	{
-		$this->load->view('User/Media');
+		$this->load->view('User/media');
 	}
 	public function Login()
 	{
@@ -45,14 +45,14 @@ class User extends CI_Controller {
 	}
 	public function Gallery()
 	{
-		$this->load->view('User/Gallery');
+		$this->load->view('User/gallery');
 	}
 	public function Audio()
 	{
-		$this->load->view('User/Audio');
+		$this->load->view('User/audio');
 	}
 	public function Video()
 	{
-		$this->load->view('User/Video');
+		$this->load->view('User/video');
 	}
 }

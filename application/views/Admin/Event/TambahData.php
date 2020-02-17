@@ -1,4 +1,5 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");
+<?php
+    $this->load->view('Admin/Layout/Header');
 $uploadImage = 'Admin/upload_image';
 $deleteImage = 'Admin/delete_image';
 ?>
@@ -47,4 +48,6 @@ $deleteImage = 'Admin/delete_image';
 	});
 </script>
 
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
+<?php
+    $this->load->view('Admin/Layout/Header');
+?>

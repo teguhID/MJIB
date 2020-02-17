@@ -1,4 +1,6 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Header.php");?>
+<?php
+    $this->load->view('Admin/Layout/Header');
+?>
 
 <ol class="breadcrumb" style="box-shadow: 2px 2px 5px grey;">
     <li class="breadcrumb-item active"><Strong>Detail Jadwal</Strong></li>
@@ -45,4 +47,6 @@
           });
         </script> 
 
-<?php $basedir = realpath(__DIR__); include($basedir . "..\..\Layout\Footer.php");?>
+<?php
+    $this->load->view('Admin/Layout/Footer');
+?>

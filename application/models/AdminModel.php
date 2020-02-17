@@ -140,6 +140,15 @@ class AdminModel extends CI_Model {
     {
         return $this->db->insert($tabel, $data);
     }
+    public function DataTagFoto()
+    {
+        return $this->db->get('tag_foto');
+    }
+    public function DeleteTagFoto($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->delete('tag_foto');
+    }
 
     // =================================>>>>== DOKUMENTASI ==<<<<================================== //
 

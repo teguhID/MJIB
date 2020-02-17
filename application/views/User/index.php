@@ -1,4 +1,6 @@
-<?php $basedir = realpath(__DIR__); include($basedir . "..\Layout\Header.php");?>
+<?php
+    $this->load->view('User/Layout/Header');
+?>
 <!-- banner -->
 <section class="banner">
     <div class="callbacks_container">
@@ -347,5 +349,6 @@
     </div>
 </section>
 <!-- //news -->
-
-<?php $basedir = realpath(__DIR__); include($basedir . "..\Layout\Footer.php");?>
+<?php
+    $this->load->view('User/Layout/Footer');
+?>

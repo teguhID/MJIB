@@ -1,4 +1,6 @@
-<?php include("Layout\Header.php");?>
+<?php
+    $this->load->view('Admin/Layout/Header');
+?>
 <!-- /.container-fluid -->
 
         <div class="row" style="padding: 30px">
@@ -119,4 +121,6 @@
           });
         </script>            
 
-<?php include("Layout\Footer.php");?>
+<?php
+    $this->load->view('Admin/Layout/Footer');
+?>

@@ -83,7 +83,7 @@ class Admin extends CI_Controller {
         return redirect('Admin/BiografiMJIB','refresh');
     }
 
-    //===================================================================================//
+    // =================================>>>>== ABOUT ==<<<<================================== //
     public function BiografiPimpinanMJIB()  //  GURU  //
     {
         $data['biografiPimpinanMJIB']= $this->AdminModel->BiografiPimpinanMJIB()->result_array();
@@ -250,17 +250,28 @@ class Admin extends CI_Controller {
     // =================================>>>>== DOKUMENTASI ==<<<<================================== //
     public function Foto()
     {
-        $this->load->view('Admin/Dokumentasi/Foto');
+        $dataTag['tagFoto'] = $this->AdminModel->DataTagFoto()->result_array();
+        $this->load->view('Admin/Dokumentasi/Foto', $dataTag);
+    }
+    public function TagFoto()
+    {
+        $data = $this->AdminModel->DataTagFoto()->result();
+        echo json_encode($data);
+    }
+    public function DeleteTagFoto($id)
+    {
+        return $this->AdminModel->DeleteTagFoto($id);
+        // return redirect('Admin/Foto', 'refresh');
     }
     public function UploadImage()
     {
-        $countfiles = count($_FILES['image']['name']);
+        $countfiles = count($_FILES['foto']['name']);
         for($i=0;$i<$countfiles;$i++){
-            $filename = date("dmyhis") . $i . $_FILES['image']['name'][$i];
-            move_uploaded_file($_FILES['image']['tmp_name'][$i],'./assets/admin/img/dokumentasi/foto/'.$filename);
-            $data['image'] = $filename;
+            $filename = date("dmyhis") . $i . $_FILES['foto']['name'][$i];
+            move_uploaded_file($_FILES['foto']['tmp_name'][$i],'./assets/admin/img/dokumentasi/foto/'.$filename);
+            $data['foto'] = $filename;
             $data['tag'] = $this->input->post('tag');
-            $data['updated_at'] = $this->input->post('updated_at');
+            $data['dateUpload'] = date("d/m/y");
             $this->AdminModel->InsertFoto($data, 'foto');
         }
     }
